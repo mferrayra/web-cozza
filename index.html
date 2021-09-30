@@ -3,57 +3,74 @@
 <head>
 	<meta charset="utf-8">
 	<title>Casa Cozza</title>
+	<link rel="stylesheet" href="style.css">	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/53a532dec6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<img src="images/logo.svg" alt="Logo de Casa Cozza">
-		<input type="text">
-		<a href="#">Whatsapp</a>
-		<a href="#">Email</a>
-		<nav>
-			<ul>
-				<li><a href="pages/limpieza.html">Limpieza</a></li>
-				<li><a href="pages/bazar.html">Bazar</a></li>
-				<li><a href="pages/perfumeria.html">Perfumería</a></li>
-				<li><a href="pages/petshop.html">Pet Shop</a></li>
-				<li><a href="pages/ofertas.html">Ofertas</a></li>
-			</ul>
-		</nav>		
+		<div>
+			<a href="/"><img src="images/logo-cozza-small.gif" alt="Logo de Casa Cozza"></a>
+			<input class="header__search" type="text">			
+		</div>		
+		<div>
+			<a class="header__icon" href="#"><img src="images/whatsapp-small.gif" alt="Icono de Whatsapp"></a>
+			<a class="header__icon" href="#"><img src="images/email-small.gif" alt="Icono de Email Contacto"></a>
+		</div>		
 	</header>
-	<section>
-		<img src="images/portada.gif" alt="Imagen de la página de inicio">
-		<h1>Lorem Ipsum</h1>
-		<p>
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.			
-		</p>
+	<nav>
+		<ul>
+			<li><a href="pages/limpieza.html"><i class="fa fa-broom fa-lg"></i> Limpieza</a></li>
+			<li><a href="pages/bazar.html"><i class="fa fa-bitbucket fa-lg"></i> Bazar</a></li>
+			<li><a href="pages/perfumeria.html"><i class="fa fa-spray-can fa-lg"></i> Perfumería</a></li>
+			<li><a href="pages/petshop.html"><i class="fa fa-dog fa-lg"></i> Pet Shop</a></li>
+			<li><a href="pages/ofertas.html"><i class="fa fa-bullhorn fa-lg"></i> Ofertas</a></li>
+		</ul>
+	</nav>
+	<section>		
+		<img src="images/generic.gif" alt="Imagen de la página de inicio">
+		<div>
+			<h1>Lorem Ipsum</h1>
+			<p>
+				<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.			
+			</p>
+		</div>		
 	</section>
-	<footer>		
-		<small>
-			<b><u>Casa Cozza</u></b>
-			<ul>
-				<li>Email: info@casacozza.com.ar</li>
-				<li>Teléfono: 0341-4202369</li>
-				<li>Whatsapp: +54 9 341664921</li>
-				<li>Lunes a Viernes de 9 a 18hs.</li>
-			</ul>
-			<b><u>Contenido</u></b>
-			<ul>
-				<li>Inicio</li>
-				<li>Nosotros</li>
-				<li><a href="pages/contacto.html">Contacto</a></li>
-			</ul>
-			<b><u>Newsletter</u></b>
-			<br>
-			<input type="text" placeholder="Ingresá tu email">
-			<input type="button" value="SUSCRIBITE">
-			<br>
-			<b><u>Seguinos</u></b>
-			<ul>
-				<li>Facebook</li>
-				<li>Instagram</li>
-			</ul>
-			<b>© Casa Cozza 2021</b>
-		</small>		
+	<footer>
+		<div>
+			<small>
+				<h3>Casa Cozza</h3>
+				<ul>
+					<li>Email: info@casacozza.com.ar</li>
+					<li>Teléfono: 0341-4202369</li>
+					<li>Whatsapp: +54 9 341664921</li>
+					<li>Lunes a Viernes de 9 a 18hs.</li>
+				</ul>
+			</small>
+			<small>
+				<h3>Contenido</h3>
+				<ul>
+					<li>Inicio</li>
+					<li>Nosotros</li>
+					<li><a href="pages/contacto.html">Contacto</a></li>
+				</ul>
+			</small>
+			<small>
+				<h3>Newsletter</h3>
+				<br>
+				<input class="footer__newsletter__text" type="text" placeholder="Ingresá tu email">
+				<input class="footer__newsletter__button" type="button" value="SUSCRIBITE">
+				<br>
+			</small>
+			<small>
+				<h3>Seguinos</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Instagram</li>
+				</ul>			
+			</small>	
+		</div>
+		<h5>© Casa Cozza 2021</h6>
 	</footer>
 </body>
 </html>

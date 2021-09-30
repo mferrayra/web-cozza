@@ -3,63 +3,122 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ofertas</title>
+	<link rel="stylesheet" href="../css/ofertas.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/53a532dec6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1>Ofertas!</h1>
-	<table>
-		<thead>
-			<tr>
-				<td>Combos</td>
-				<td>publicado</td>
-				<td>Productos</td>
-				<td>Precio</td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Limpieza</td>
-				<td>20-09-2021</td>
-				<td>
-					<ol>
-						<li>DET. CIF ACTIVE GEL LIMON 750 CC</li>
-						<li>LAVANDINA DEA X 4 LTS.</li>
-						<li>ARIEL LIQUIDO X 800 ML</li>
-						<li>TRAPO DE PISO BLANCO CONSORCIO</li>
-						<li>TRAPO DE PISO BLANCO CONSORCIO</li>
-					</ol>
-				</td>	
-				<td>350,80</td>
-			</tr>
-			<tr>
-				<td>Bazar</td>
-				<td>21-09-2021</td>
-				<td>
-					<ol>
-						<li>BALDE OVAL 15 LTS. C/ ESCURRIDOR DESES</li>						
-						<li>PALANGANA 6 LTS.</li>
-						<li>EMBUDO ECO NRO 12</li>
-					</ol>
-				</td>	
-				<td>445,50</td>
-			</tr>
-			<tr>
-				<td>Perfumería</td>
-				<td>21-09-2021</td>
-				<td>
-					<ol>
-						<li>PRESTOBARBA ULTRA GRIP</li>						
-						<li>ESPUMA PRESTOBARBA NORMAL</li>						
-					</ol>
-				</td>	
-				<td>200,00</td>
-			</tr>
-			<tr>
-				<td>Pet Shop</td>
-				<td colspan="3">
-					<h3>No hay ofertas disponibles</h3>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	<header>
+		<div>
+			<a href="../index.html"><img src="../images/logo-cozza-small.gif" alt="Logo de Casa Cozza"></a>
+			<h1>Ofertas destacadas</h1>
+		</div>		
+		<div>
+			<a class="header__icon" href="#"><img src="../images/whatsapp-small.gif" alt="Icono de Whatsapp"></a>
+			<a class="header__icon" href="#"><img src="../images/email-small.gif" alt="Icono de Email Contacto"></a>
+		</div>		
+	</header>
+	<nav>
+		<ul>
+			<li><a href="pages/limpieza.html"><i class="fa fa-broom fa-lg"></i> Limpieza</a></li>
+			<li><a href="pages/bazar.html"><i class="fa fa-bitbucket fa-lg"></i> Bazar</a></li>
+			<li><a href="pages/perfumeria.html"><i class="fa fa-spray-can fa-lg"></i> Perfumería</a></li>
+			<li><a href="pages/petshop.html"><i class="fa fa-dog fa-lg"></i> Pet Shop</a></li>
+			<li><a href="pages/ofertas.html"><i class="fa fa-bullhorn fa-lg"></i> Ofertas</a></li>
+		</ul>
+	</nav>
+	<section>
+		<table>
+			<thead>
+				<tr>
+					<td>Combos</td>
+					<td>publicado</td>
+					<td>Productos</td>
+					<td>Precio</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Limpieza</td>
+					<td>20-09-2021</td>
+					<td>
+						<ol>
+							<li>DET. CIF ACTIVE GEL LIMON 750 CC</li>
+							<li>LAVANDINA DEA X 4 LTS.</li>
+							<li>ARIEL LIQUIDO X 800 ML</li>
+							<li>TRAPO DE PISO BLANCO CONSORCIO</li>
+							<li>TRAPO DE PISO BLANCO CONSORCIO</li>
+						</ol>
+					</td>	
+					<td>350,80</td>
+				</tr>
+				<tr>
+					<td>Bazar</td>
+					<td>21-09-2021</td>
+					<td>
+						<ol>
+							<li>BALDE OVAL 15 LTS. C/ ESCURRIDOR DESES</li>						
+							<li>PALANGANA 6 LTS.</li>
+							<li>EMBUDO ECO NRO 12</li>
+						</ol>
+					</td>	
+					<td>445,50</td>
+				</tr>
+				<tr>
+					<td>Perfumería</td>
+					<td>21-09-2021</td>
+					<td>
+						<ol>
+							<li>PRESTOBARBA ULTRA GRIP</li>						
+							<li>ESPUMA PRESTOBARBA NORMAL</li>						
+						</ol>
+					</td>	
+					<td>200,00</td>
+				</tr>
+				<tr>
+					<td>Pet Shop</td>
+					<td colspan="3">
+						<h3>No hay ofertas disponibles</h3>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>	
+	<footer>
+		<div>
+			<small>
+				<h3>Casa Cozza</h3>
+				<ul>
+					<li>Email: info@casacozza.com.ar</li>
+					<li>Teléfono: 0341-4202369</li>
+					<li>Whatsapp: +54 9 341664921</li>
+					<li>Lunes a Viernes de 9 a 18hs.</li>
+				</ul>
+			</small>
+			<small>
+				<h3>Contenido</h3>
+				<ul>
+					<li>Inicio</li>
+					<li>Nosotros</li>
+					<li><a href="../pages/contacto.html">Contacto</a></li>
+				</ul>
+			</small>
+			<small>
+				<h3>Newsletter</h3>
+				<br>
+				<input class="footer__newsletter__text" type="text" placeholder="Ingresá tu email">
+				<input class="footer__newsletter__button" type="button" value="SUSCRIBITE">
+				<br>
+			</small>
+			<small>
+				<h3>Seguinos</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Instagram</li>
+				</ul>			
+			</small>	
+		</div>
+		<h5>© Casa Cozza 2021</h6>
+	</footer>
 </body>
 </html>

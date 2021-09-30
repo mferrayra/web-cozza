@@ -1,0 +1,49 @@
+/*style.css include*/
+@import "../style.css";
+
+h1 {
+	display:  inline;
+	vertical-align: top;
+	margin-left: 50px;	
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.8em;
+	text-decoration: overline;
+	text-transform: capitalize;
+}
+
+fieldset {
+	background-color: #993300;
+  	color: #FFDEAD;
+  	width: 400px;
+  	margin: 20px;
+  	padding: 10px;
+  	border: none;
+  	border-radius: 15px;	
+  	font-family: 'Roboto', sans-serif;
+  	font-size: 1.2em;  	
+}
+
+fieldset  input {
+	margin: 10px 10px;
+	width:  100px;
+	height:  25px;
+	background-color: #FFDEAD;
+	font-weight: bolder;
+}
+
+fieldset > input[Type="text"] {
+	display: block;	
+	width:  100%;
+	margin: 5px 0px;
+	background-color:  white;
+	font-weight: 200;
+}
+
+embed {
+	width: 600px;
+	height: 270px;
+}
+
+.section__fieldset__buttons {
+	text-align: right;
+}

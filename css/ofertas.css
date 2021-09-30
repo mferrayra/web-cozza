@@ -1,0 +1,37 @@
+/*style.css include*/
+@import "../style.css";
+
+h1 {
+	display:  inline;
+	vertical-align: top;
+	margin-left: 50px;	
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.8em;
+	text-decoration: overline;
+	text-transform: capitalize;
+}
+
+table {
+	margin: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-collapse: collapse;
+	width: 90%;
+}
+
+td {
+  border: 1px solid #993300;
+  padding: 8px;
+}
+
+thead {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #993300;
+  color: white;
+}
+
+ol {
+	margin-left: 8px;
+	padding: 5px;
+}

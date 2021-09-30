@@ -3,22 +3,87 @@
 <head>
 	<meta charset="utf-8">
 	<title>Contacto</title>
+	<link rel="stylesheet" href="../css/contacto.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/53a532dec6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<form method="post">
-		<fieldset>
-			<legend>Contactate con nosotros!</legend>
-			<label for="nombres">* Nombres</label>
-			<input type="text" name="nombres" required placeholder="tus nombres" autofocus>
-			<label for="apellido">* Apellido</label>
-			<input type="text" name="apellido" required placeholder="tu apellido">
-			<label for="email">* Email</label>
-			<input type="text" name="email" required placeholder="tu email">
-			<label for="telefono">Teléfono</label>
-			<input type="text" name="telefono" required placeholder="tu teléfono">
-			<input type="reset" name="reset" value="Limpiar">
-			<input type="submit" name="enviar" value="Enviar">
-		</fieldset>
-	</form>
+	<header>
+		<div>
+			<a href="../index.html"><img src="../images/logo-cozza-small.gif" alt="Logo de Casa Cozza"></a>
+			<h1>Contactáte con nosotros</h1>
+		</div>		
+		<div>
+			<a class="header__icon" href="#"><img src="../images/whatsapp-small.gif" alt="Icono de Whatsapp"></a>
+			<a class="header__icon" href="#"><img src="../images/email-small.gif" alt="Icono de Email Contacto"></a>
+		</div>		
+	</header>
+	<nav>
+		<ul>
+			<li><a href="pages/limpieza.html"><i class="fa fa-broom fa-lg"></i> Limpieza</a></li>
+			<li><a href="pages/bazar.html"><i class="fa fa-bitbucket fa-lg"></i> Bazar</a></li>
+			<li><a href="pages/perfumeria.html"><i class="fa fa-spray-can fa-lg"></i> Perfumería</a></li>
+			<li><a href="pages/petshop.html"><i class="fa fa-dog fa-lg"></i> Pet Shop</a></li>
+			<li><a href="pages/ofertas.html"><i class="fa fa-bullhorn fa-lg"></i> Ofertas</a></li>
+		</ul>
+	</nav>
+	<section>
+		<form method="post">
+			<fieldset>				
+				<label for="nombres">* Nombres</label>
+				<input type="text" name="nombres" required placeholder="tus nombres" autofocus>
+				<label for="apellido">* Apellido</label>
+				<input type="text" name="apellido" required placeholder="tu apellido">
+				<label for="email">* Email</label>
+				<input type="text" name="email" required placeholder="tu email">
+				<label for="telefono">Teléfono</label>
+				<input type="text" name="telefono" required placeholder="tu teléfono">
+				<div class="section__fieldset__buttons">
+					<input type="reset" name="reset" value="Limpiar">
+					<input type="submit" name="enviar" value="Enviar">
+				</div>				
+			</fieldset>
+		</form>
+		<div>
+			<h2>Quienes somos...</h2>
+			<embed src="https://www.youtube.com/embed/MGYjzBVWCww">
+		</div>
+	</section>	
+	<footer>
+		<div>
+			<small>
+				<h3>Casa Cozza</h3>
+				<ul>
+					<li>Email: info@casacozza.com.ar</li>
+					<li>Teléfono: 0341-4202369</li>
+					<li>Whatsapp: +54 9 341664921</li>
+					<li>Lunes a Viernes de 9 a 18hs.</li>
+				</ul>
+			</small>
+			<small>
+				<h3>Contenido</h3>
+				<ul>
+					<li>Inicio</li>
+					<li>Nosotros</li>
+					<li><a href="../pages/contacto.html">Contacto</a></li>
+				</ul>
+			</small>
+			<small>
+				<h3>Newsletter</h3>
+				<br>
+				<input class="footer__newsletter__text" type="text" placeholder="Ingresá tu email">
+				<input class="footer__newsletter__button" type="button" value="SUSCRIBITE">
+				<br>
+			</small>
+			<small>
+				<h3>Seguinos</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Instagram</li>
+				</ul>			
+			</small>	
+		</div>
+		<h5>© Casa Cozza 2021</h6>
+	</footer>
 </body>
 </html>
