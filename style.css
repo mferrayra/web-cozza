@@ -3,6 +3,10 @@
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
 @import "css/common.css";
 
+main {
+	margin-top: 10px;
+}
+
 aside {	
 	position: fixed;
 	padding: 0 5px;	
@@ -15,8 +19,8 @@ aside {
 
 h1 {
 	position: relative;
-	top: 80px;
-	left: 30px;
+	top: 380px;
+	left: 370px;
 	width: 30%;
 	background-color: #00c4f0;
 	text-align: center;
