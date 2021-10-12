@@ -1,161 +1,32 @@
-* {
-	margin: 0;
-	padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+@import "css/common.css";
+
+aside {	
+	position: fixed;
+	padding: 0 5px;	
+	bottom: 20px;
+	right: 20px;	
+	text-align: right;
+	background-color: #993300;	
+	border-radius: 10px;
 }
 
-body {
-	background-color: #FFDEAD;	
-	font-family: 'Roboto', sans-serif;
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	padding: 5px 20px;
-	border-top-style: solid;
-	border-color: #993300;
-	border-width: 10px;
-}
-
-nav {	
-	padding: 10px 30px;
-	background-color: #993300;
-	height: 50px;
-	border-bottom-style: solid;
-	border-color: #00c4f0;
-	border-width: 5px;
-}
-
-ul {
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
-	color: #FFDEAD;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.2em;
-}
-
-nav > ul > li {
-	/*display: inline-flex; uso inline-block para cumplir con la consigna de box modeling*/
-	display: inline-block;
+h1 {
 	position: relative;
-	justify-content: space-between;
-	padding: 15px 20px 5px 50px;
-	width: 200px;	
-}
-
-nav > ul > li > a {	
-	font-weight: bold;	
-}
-
-nav > ul > li > ul {
-	position: absolute;
-	display: none;
-}
-
-nav > ul > li > ul > li {
-	display: block;
-}
-
-nav > ul > li:hover ul {
-	display:block;
-	background-color: #993300;
-	width: 250px;
-	padding-top: 55px;
-	padding: 15px;
-	font-weight: 200;
-	font-size: 1em;
-	line-height: 2em;
-}
-
-nav > ul > li > ul > li >:hover {
-	font-weight: bold;
-}
-
-small {
-	padding: 5px;
-	color: #FFDEAD;	
-}
-
-section {
-	padding:  10px;
-	display: flex;
-	height: 800px;
-}
-
-footer {
-	background-color: #993300;
+	top: 80px;
+	left: 30px;
+	width: 30%;
+	background-color: #00c4f0;
 	text-align: center;
-	padding: 10px;
-	color: #FFDEAD;
-	height: 200px;
-	line-height: 1.8em;	
-	border-top-style: solid;
-	border-color: #00c4f0;
-	border-width: 5px;
 }
 
-footer > div {
-	display: inline-flex;
-	justify-content: space-between;	
-	width: 95%;
-	text-align: left;	
-}
-
-section > div {
-	font-size: 1.5em;	
-	color:  black;
-	padding: 10px;
-}
-
-p {
-	padding-top: 10px;
-	text-indent: 1.5em;
-	line-height: 1.7em;
-}
-
-.headerIcon {	
-	display: inline-flex;
-	justify-content: space-between;
-	padding-top: 20px;
-	width: 130px;	
-}
-
-.headerSearch {	
-	height: 40px;
-	width: 600px;
-	vertical-align: top;
-	margin: 20px 0px 0px 10px;
-	text-align: left;
-	border: solid;
-	border-width: 3px;
+.imgMain {
+	height: 650px;
+	width: 99%;
+	border-style:  solid;
+	border-width:  5px;
 	border-color: #993300;
-	background: url(images/search-small.png) 5px 5px;
-	background-repeat: no-repeat;
-	background-size: 30px 30px;
-	background-color:  white;
-	padding-left: 50px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.5em;
-}
-
-.footerNewsletterText {
-	margin: 0;
-	width: 150px;
-	height: 30px;
-	background-color:  white;
-	border: solid;
-	padding-left: 5px;
-	border-style: none;
-}
-
-.footerNewsletterButton {
-	margin-left: -3px;	
-	background-color: #FFDEAD;
-	width: 120px;
-	height: 30px;
-	font-weight: bolder;
-	border-style: none;	
+	border-radius: 10px;
 }

@@ -3,68 +3,49 @@
 <head>
 	<meta charset="utf-8">
 	<title>Casa Cozza</title>
-	<link rel="stylesheet" href="style.css">	
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-	<script src="https://kit.fontawesome.com/53a532dec6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<div>
-			<a href="/"><img src="images/logo-cozza-small.gif" alt="Logo de Casa Cozza"></a>
-			<input class="headerSearch" type="text">			
-		</div>		
-		<div class="headerIcon">
-			<a href="#"><img src="images/whatsapp-small.gif" alt="Icono de Whatsapp"></a>
-			<a href="#"><img src="images/email-small.gif" alt="Icono de Email Contacto"></a>
-		</div>		
+		<div class="stamp">
+			<img src="images/logo-cozza-small.gif" alt="Logo de Casa Cozza">
+			<span class="stampTitle">Casa Cozza</span>
+			<span class="stampSubTitle">Polirubros</span>			
+		</div>
+		<nav>
+			<ul>
+				<li class="selectedItemMenu">Inicio</li>
+				<li>
+					<a class="itemMenu" href="pages/productos.html">Productos</a>
+					<ul>
+						<li><a href="pages/productos.html#limpieza">Limpieza</a></li>
+						<li><a href="pages/productos.html#bazar">Bazar</a></li>
+						<li><a href="pages/productos.html#perfumeria">Perfumería</a></li>
+						<li><a href="pages/productos.html#petshop">Pet Shop</a></li>
+						<li><a href="pages/productos.html#varios">Varios</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="itemMenu" href="pages/nosotros.html">Nosotros</a>				
+				</li>
+				<li>
+					<a class="itemMenu" href="pages/contacto.html">Contacto</a>				
+				</li>
+				<li>
+					<a class="itemMenu" href="pages/ofertas.html">Ofertas</a>				
+				</li>			
+			</ul>
+		</nav>				
 	</header>
-	<nav>
-		<ul>
-			<li>
-				<a href="pages/limpieza.html"><i class="fa fa-broom fa-lg"></i> Limpieza</a>
-				<ul>
-					<li><a href="#">Escobas</a></li>
-					<li><a href="#">Plumeros</a></li>
-					<li><a href="#">Cepillos</a></li>
-					<li><a href="#">Limpiadores</a></li>
-					<li><a href="#">Varios</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="pages/bazar.html"><i class="fa fa-bitbucket fa-lg"></i> Bazar</a>
-				<ul>
-					<li><a href="#">Plásticos</a></li>
-					<li><a href="#">Varios</a></li>					
-				</ul>
-			</li>
-			<li>
-				<a href="pages/perfumeria.html"><i class="fa fa-spray-can fa-lg"></i> Perfumería</a>
-				<ul>
-					<li><a href="#">Shampoo</a></li>
-					<li><a href="#">Acondicionadores</a></li>
-					<li><a href="#">Jabones</a></li>
-					<li><a href="#">Filos</a></li>					
-				</ul>
-			</li>
-			<li>
-				<a href="pages/petshop.html"><i class="fa fa-dog fa-lg"></i> Pet Shop</a>
-				<ul>
-					<li><a href="#">Alimentos</a></li>
-					<li><a href="#">Accesorios</a></li>					
-				</ul>
-			</li>
-			<li><a href="pages/ofertas.html"><i class="fa fa-bullhorn fa-lg"></i> Ofertas</a></li>
-		</ul>
-	</nav>
-	<section>		
-		<img src="images/generic.gif" alt="Imagen de la página de inicio">
-		<div>
-			<h1>Lorem Ipsum</h1>
-			<p>
-				<b>Soy  Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.			
-			</p>
-		</div>		
-	</section>
+	<main>
+		<h1>Gracias por visitarnos...</h1>
+		<section>
+			<img class="imgMain" src="images/portada.png" alt="Portada del comercio">
+		</section>
+	</main>	
+	<aside>
+		<a target="_blank" href="https://web.whatsapp.com/send?phone=+5493416748967&text=Hola, ..."><i class="fab fa-whatsapp-square fa-4x"></i></a>
+	</aside>
 	<footer>
 		<div>
 			<small>

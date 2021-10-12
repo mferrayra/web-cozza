@@ -4,87 +4,100 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ofertas</title>
-	<link rel="stylesheet" href="../css/ofertas.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-	<script src="https://kit.fontawesome.com/53a532dec6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/ofertas.css">	
 </head>
 <body>
 	<header>
-		<div>
+		<div class="stamp">
 			<a href="../index.html"><img src="../images/logo-cozza-small.gif" alt="Logo de Casa Cozza"></a>
-			<h1>Ofertas destacadas</h1>
-		</div>		
-		<div class="headerIcon">
-			<a href="#"><img src="../images/whatsapp-small.gif" alt="Icono de Whatsapp"></a>
-			<a href="#"><img src="../images/email-small.gif" alt="Icono de Email Contacto"></a>
-		</div>		
+			<span class="stampTitle">Casa Cozza</span>
+			<span class="stampSubTitle">Polirubros</span>			
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a class="itemMenu" href="../index.html">Inicio</a>				
+				</li>
+				<li>
+					<a class="itemMenu" href="../pages/productos.html">Productos</a>
+					<ul>
+						<li><a href="#">Limpieza</a></li>
+						<li><a href="#">Bazar</a></li>
+						<li><a href="#">Perfumería</a></li>
+						<li><a href="#">Pet Shop</a></li>
+						<li><a href="#">Varios</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="itemMenu" href="../pages/nosotros.html">Nosotros</a>				
+				</li>
+				<li>
+					<a class="itemMenu" href="../pages/contacto.html">Contacto</a>				
+				</li>
+				<li class="selectedItemMenu">Ofertas</li>			
+			</ul>
+		</nav>				
 	</header>
-	<nav>
-		<ul>
-			<li><a href="../pages/limpieza.html"><i class="fa fa-broom fa-lg"></i> Limpieza</a></li>
-			<li><a href="../pages/bazar.html"><i class="fa fa-bitbucket fa-lg"></i> Bazar</a></li>
-			<li><a href="../pages/perfumeria.html"><i class="fa fa-spray-can fa-lg"></i> Perfumería</a></li>
-			<li><a href="../pages/petshop.html"><i class="fa fa-dog fa-lg"></i> Pet Shop</a></li>
-			<li><a href="../pages/ofertas.html"><i class="fa fa-bullhorn fa-lg"></i> Ofertas</a></li>
-		</ul>
-	</nav>
-	<section>
-		<table>
-			<thead>
-				<tr>
-					<td>Combos</td>
-					<td>publicado</td>
-					<td>Productos</td>
-					<td>Precio</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Limpieza</td>
-					<td>20-09-2021</td>
-					<td>
-						<ol>
-							<li>DET. CIF ACTIVE GEL LIMON 750 CC</li>
-							<li>LAVANDINA DEA X 4 LTS.</li>
-							<li>ARIEL LIQUIDO X 800 ML</li>
-							<li>TRAPO DE PISO BLANCO CONSORCIO</li>
-							<li>TRAPO DE PISO BLANCO CONSORCIO</li>
-						</ol>
-					</td>	
-					<td>350,80</td>
-				</tr>
-				<tr>
-					<td>Bazar</td>
-					<td>21-09-2021</td>
-					<td>
-						<ol>
-							<li>BALDE OVAL 15 LTS. C/ ESCURRIDOR DESES</li>						
-							<li>PALANGANA 6 LTS.</li>
-							<li>EMBUDO ECO NRO 12</li>
-						</ol>
-					</td>	
-					<td>445,50</td>
-				</tr>
-				<tr>
-					<td>Perfumería</td>
-					<td>21-09-2021</td>
-					<td>
-						<ol>
-							<li>PRESTOBARBA ULTRA GRIP</li>						
-							<li>ESPUMA PRESTOBARBA NORMAL</li>						
-						</ol>
-					</td>	
-					<td>200,00</td>
-				</tr>
-				<tr>
-					<td>Pet Shop</td>
-					<td colspan="3">
-						<h3>No hay ofertas disponibles</h3>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</section>	
+	<main>
+		<h1>Ofertas del mes</h1>
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<td>Combos</td>
+						<td>publicado</td>
+						<td>Productos</td>
+						<td>Precio</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Limpieza</td>
+						<td>20-09-2021</td>
+						<td>
+							<ol>
+								<li>DET. CIF ACTIVE GEL LIMON 750 CC</li>
+								<li>LAVANDINA DEA X 4 LTS.</li>
+								<li>ARIEL LIQUIDO X 800 ML</li>
+								<li>TRAPO DE PISO BLANCO CONSORCIO</li>
+								<li>TRAPO DE PISO BLANCO CONSORCIO</li>
+							</ol>
+						</td>	
+						<td>350,80</td>
+					</tr>
+					<tr>
+						<td>Bazar</td>
+						<td>21-09-2021</td>
+						<td>
+							<ol>
+								<li>BALDE OVAL 15 LTS. C/ ESCURRIDOR DESES</li>						
+								<li>PALANGANA 6 LTS.</li>
+								<li>EMBUDO ECO NRO 12</li>
+							</ol>
+						</td>	
+						<td>445,50</td>
+					</tr>
+					<tr>
+						<td>Perfumería</td>
+						<td>21-09-2021</td>
+						<td>
+							<ol>
+								<li>PRESTOBARBA ULTRA GRIP</li>						
+								<li>ESPUMA PRESTOBARBA NORMAL</li>						
+							</ol>
+						</td>	
+						<td>200,00</td>
+					</tr>
+					<tr>
+						<td>Pet Shop</td>
+						<td colspan="3">
+							<h3>No hay ofertas disponibles</h3>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>	
 	<footer>
 		<div>
 			<small>

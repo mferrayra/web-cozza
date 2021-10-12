@@ -1,48 +1,55 @@
-/*style.css include*/
-@import "../style.css";
-
-h1 {
-	display:  inline;
-	vertical-align: top;
-	margin-left: 50px;	
-	font-family: 'Roboto', sans-serif;
-	font-size: 2.8em;
-	text-decoration: overline;
-	text-transform: capitalize;
-}
+@import "common.css";
 
 fieldset {
-	background-color: #993300;
-  	color: #FFDEAD;
-  	width: 400px;
-  	margin: 20px;
-  	padding: 10px;
-  	border: none;
-  	border-radius: 15px;
+	display:  flex;		
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 10px;
+	border-color: #993300;
+  	color: #993300;  	
+  	margin: 50px 20px;
+  	padding: 30px;  	
   	font-size: 1.2em;  	
 }
 
-fieldset  input {
-	margin: 10px 10px;
-	width:  100px;
-	height:  25px;
+fieldset input {
+	margin: 20px 0 0 20px;
+	width:  150px;
+	height:  40px;
 	background-color: #FFDEAD;
-	font-weight: bolder;
+	font-weight: bold;
 }
 
-fieldset > input[Type="text"] {
-	display: block;	
-	width:  100%;
+fieldset input[Type="text"] {	
+	width:  95%;
 	margin: 5px 0px;
 	background-color:  white;
 	font-weight: 200;
 }
 
-embed {
-	width: 600px;
-	height: 270px;
+.contactData {
+	display:  flex;
+	flex-direction: column;
+	align-items: left;
+	width: 600px;	
 }
 
-.sectionFieldsetButtons {
-	text-align: right;
+.buttonsData {
+	display:  flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.imgAnswer {
+	margin-top: 20px;
+	margin-left: 10px;
+	height:  150px;
+	border-style: solid;
+	border-radius:  120px;
+	border-width: 6px;
+}
+
+.message {
+	margin-left:  10px;
+	font-style: italic;
 }
