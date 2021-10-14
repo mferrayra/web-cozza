@@ -1,17 +1,25 @@
+/* font family - fontawesome  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
 
+/* reset margin-padding  */
 * {
 	margin: 0;
 	padding: 0;
 }
 
+/* body */
 body {
+	display: flex;
+	flex-direction: column;
 	background-color: #FFDEAD;	
 	font-family: 'Roboto', sans-serif;
+	height: 100%;
 }
 
+
+/* header */
 header {
 	display: flex;
 	justify-content: space-between;
@@ -26,27 +34,33 @@ header {
 	top: 0;
 }
 
-h1 {
-	margin: 30px 0 20px;
-	font-size: 2.5em;
+/* brand */
+.stamp {	
+	font-family: 'Lobster', cursive;
+	display: grid;
+	grid-template:  40px 40px / 110px 180px;
 }
 
-a {
-	text-decoration: none;	
-	font-family: 'Roboto', sans-serif;
-	color: #FFDEAD;
+.stampTitle {
+	font-size: 2.5rem;
+	grid-column-start: 2;	
+	place-self: end;
+	align-self: start;
 }
 
+.stampSubTitle {
+	font-size: 1.5rem;
+	grid-column-start: 2;	
+	place-self: center;
+}
+
+/* navbar */
 nav {
-	font-size: 1.2em;	
+	font-size: 1.2rem;	
 	width: 700px;
 	height: 30px;
 	align-self:  center;
 	padding: 0 40px;
-}
-
-ul {
-	list-style: none;
 }
 
 nav > ul {	
@@ -55,12 +69,12 @@ nav > ul {
 	justify-content: space-between;	
 }
 
-nav > ul > li > ul {
+.submenu {
 	position: absolute;
 	display: none;
 }
 
-nav > ul > li > ul > li {
+ul.submenu > li {
 	display: block;
 }
 
@@ -77,69 +91,11 @@ nav > ul > li:hover ul {
 	border-color: #FFDEAD;
 }
 
-nav > ul > li > ul > li >:hover {
-	font-weight: bold;
-}
-
-small {
-	padding: 5px;
-	color: #FFDEAD;	
-}
-
-main {
-	margin-top: 70px;
-	padding: 15px;
-	height: 800px;
-}
-
-footer {
-	background-color: #993300;
-	text-align: center;
-	padding: 10px;
-	color: #FFDEAD;
-	height: 200px;
-	line-height: 1.8em;	
-	border-top-style: solid;
-	border-color: #00c4f0;
-	border-width: 3px;
-}
-
-footer > div {
-	display: inline-flex;
-	justify-content: space-between;	
-	width: 95%;
-	text-align: left;	
-}
-
-.stamp {	
-	font-family: 'Lobster', cursive;
-	display: grid;
-	grid-template:  40px 40px / 110px 180px;
-}
-
-.stampTitle {
-	font-size: 2.5em;
-	grid-column-start: 2;	
-	place-self: end;
-	align-self: start;
-}
-
-.stampSubTitle {
-	font-size: 1.5em;
-	grid-column-start: 2;	
-	place-self: center;
-}
-
-
-.iconMenu {
-	background-color: #FFDEAD;
-}
-
 .itemMenu {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	font-size: 1em;	
+	font-size: 1.2rem;	
 }
 
 a.itemMenu:hover {
@@ -153,10 +109,134 @@ a.itemMenu:hover {
 	color: #00c4f0;
 }
 
+ul.submenu > li:hover {
+	font-weight: bold;
+}
+
+/* tags */
+h1 {
+	margin: 30px 0 20px;
+	font-size: 2.5em;
+}
+
+a {
+	text-decoration: none;	
+	font-family: 'Roboto', sans-serif;
+	color: #FFDEAD;
+}
+
+ul {
+	list-style: none;
+}
+
+small {
+	padding: 5px;
+	color: #FFDEAD;
+}
+
+main {
+	margin-top: 70px;
+	padding: 15px;
+	height: 800px;
+}
+
+/* footer */
+footer {
+	display: grid;
+	grid-template-areas: 
+	'businessTitle contentTitle newsLetterTitle followUsTitle'
+	'. . . .'
+	'email home . facebook'
+	'phone us newsLetterInput instagram'
+	'whatsapp contact newsLetterInput .'
+	'openStore . . .'
+	'registeredBrand registeredBrand registeredBrand registeredBrand';
+	grid-template-rows: 25px 10px;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #993300;		
+	color: #FFDEAD;		
+	border-top-style: solid;
+	border-color: #00c4f0;
+	border-width: 3px;	
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+.footerBusinessTitle {
+	grid-area: businessTitle;	
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+.footeemail {
+	grid-area: email;
+}
+
+.footerPhone {
+	grid-area: phone;
+}
+
+.footerWhatsapp {
+	grid-area: whatsapp;
+}
+
+.footerOpenStore {
+	grid-area: openStore;
+}
+
+.footerContentTitle {
+	grid-area: contentTitle;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+.footerHome {
+	grid-area: home;
+}
+
+.footerUs {
+	grid-area: us;
+}
+
+.footerContact {
+	grid-area:  contact;
+}
+
+.footerNewsletterTitle {
+	grid-area: newsLetterTitle;	
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+.footernewsLetterInput {
+	grid-area: newsLetterInput;	
+}
+
+.footerFollowUsTitle {
+	grid-area: followUsTitle;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+.footerFacebook {
+	grid-area: facebook;
+}
+
+.footerInstagram {
+	grid-area: instagram;
+}
+
+.footerRegisteredBrand {
+	grid-area: registeredBrand;
+	justify-self: center;
+}
+
+
 .footerNewsletterText {
 	margin: 0;
 	width: 150px;
-	height: 30px;
+	height: 25px;	
 	background-color:  white;
 	border: solid;
 	padding-left: 5px;
@@ -166,8 +246,128 @@ a.itemMenu:hover {
 .footerNewsletterButton {
 	margin-left: -3px;	
 	background-color: #FFDEAD;
-	width: 120px;
-	height: 30px;
+	width: 120px;	
+	height: 25px;
 	font-weight: bolder;
 	border-style: none;	
+}
+
+/* media queries */
+@media only screen and (max-width: 320px)
+{
+	div.stamp > img {
+		width: 40px;
+		height:  30px;
+	}
+
+	.stamp {
+		grid-template:  15px 10px / 50px 70px;
+		align-items: left;
+	}
+
+	.stampTitle {
+		font-size:  0.9rem;
+		place-self: start;
+		align-self: start;
+	}
+
+	.stampSubTitle {
+		font-size:  0.7rem;	
+	}
+
+	.itemMenu {
+		font-size: 0.7rem;
+	}
+
+	.selectedItemMenu {
+		font-size: 0.8rem;
+	}
+
+	footer {	
+		grid-template-areas: 
+		'businessTitle followUsTitle'
+		'. .'
+		'email facebook'
+		'phone instagram'
+		'whatsapp .'
+		'openStore .'
+		'registeredBrand registeredBrand';	
+		max-width: 100%;
+		font-size: 0.7rem;
+	}
+
+	.footerContentTitle {
+		display: none;
+	}
+
+	.footerHome {
+		display: none;
+	}
+
+	.footerUs {
+		display: none;
+	}
+
+	.footerContact {
+		display: none;
+	}
+
+	.footerNewsletterTitle {
+		display: none;
+	}
+
+	.footernewsLetterInput {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	div.stamp > img {
+		width: 40px;
+		height:  30px;
+	}
+
+	.stamp {
+		grid-template:  15px 10px / 50px 70px;
+		align-items: left;
+	}
+
+	.stampTitle {
+		font-size:  0.9rem;
+		place-self: start;
+		align-self: start;
+	}
+
+	.stampSubTitle {
+		font-size:  0.7rem;	
+	}
+
+	.itemMenu {
+		font-size: 0.7rem;
+	}
+
+	.selectedItemMenu {
+		font-size: 0.8rem;
+	}
+
+	footer {	
+		grid-template-areas: 
+		'businessTitle contentTitle followUsTitle'
+		'. . .'
+		'email home facebook'
+		'phone us instagram'
+		'whatsapp contact .'
+		'openStore . .'
+		'registeredBrand registeredBrand registeredBrand';
+		max-width: 100%;
+		font-size: 0.7rem;
+	}
+
+	.footerNewsletterTitle {
+		display: none;
+	}
+
+	.footernewsLetterInput {
+		display: none;
+	}	
 }
