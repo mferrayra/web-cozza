@@ -13,7 +13,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: #FFDEAD;	
+	background-color: #ffdead;	
 	font-family: 'Roboto', sans-serif;
 	height: 100%;
 }
@@ -28,7 +28,7 @@ header {
 	border-bottom-color: #00c4f0;
 	border-bottom-style: solid;
 	border-width: 3px;
-	color: #FFDEAD;
+	color: #ffdead;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -88,7 +88,7 @@ nav > ul > li:hover ul {
 	line-height: 2em;
 	border-top-style: solid;
 	border-top-width: 3px;
-	border-color: #FFDEAD;
+	border-color: #ffdead;
 }
 
 .itemMenu {
@@ -122,16 +122,11 @@ h1 {
 a {
 	text-decoration: none;	
 	font-family: 'Roboto', sans-serif;
-	color: #FFDEAD;
+	color: #ffdead;
 }
 
 ul {
 	list-style: none;
-}
-
-small {
-	padding: 5px;
-	color: #FFDEAD;
 }
 
 main {
@@ -153,9 +148,9 @@ footer {
 	'registeredBrand registeredBrand registeredBrand registeredBrand';
 	grid-template-rows: 25px 10px;
 	justify-content: space-between;
-	padding: 10px;
-	background-color: #993300;		
-	color: #FFDEAD;		
+	padding: 10px;	
+	background: linear-gradient(to bottom, #993300, #993300, #ffdead);
+	color: #ffdead;		
 	border-top-style: solid;
 	border-color: #00c4f0;
 	border-width: 3px;	
@@ -229,7 +224,10 @@ footer {
 
 .footerRegisteredBrand {
 	grid-area: registeredBrand;
-	justify-self: center;
+	justify-self: center;		
+	padding: 0 5px;
+	background-color: #993300;	
+	border-radius: 10px;
 }
 
 
@@ -245,7 +243,7 @@ footer {
 
 .footerNewsletterButton {
 	margin-left: -3px;	
-	background-color: #FFDEAD;
+	background-color: #ffdead;
 	width: 120px;	
 	height: 25px;
 	font-weight: bolder;
