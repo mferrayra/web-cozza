@@ -13,7 +13,7 @@
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: #ffdead;	
+	background:  linear-gradient(45deg, #00c4f0, #00c4f0, #ffdead, #ffdead);
 	font-family: 'Roboto', sans-serif;
 	height: 100%;
 }
@@ -32,6 +32,11 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0;
+	z-index: 1;
+}
+
+main {
+	margin-top: 10px;
 }
 
 /* brand */
@@ -136,100 +141,23 @@ main {
 }
 
 /* footer */
-footer {
-	display: grid;
-	grid-template-areas: 
-	'businessTitle contentTitle newsLetterTitle followUsTitle'
-	'. . . .'
-	'email home . facebook'
-	'phone us newsLetterInput instagram'
-	'whatsapp contact newsLetterInput .'
-	'openStore . . .'
-	'registeredBrand registeredBrand registeredBrand registeredBrand';
-	grid-template-rows: 25px 10px;
-	justify-content: space-between;
-	padding: 10px;	
-	background: linear-gradient(to bottom, #993300, #993300, #ffdead);
+footer {	
+	background-color: #993300;
 	color: #ffdead;		
 	border-top-style: solid;
 	border-color: #00c4f0;
 	border-width: 3px;	
-	font-size: 1em;
-	line-height: 1.4em;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	width: 100%;
 }
 
-.footerBusinessTitle {
-	grid-area: businessTitle;	
+.footerTitle {
+	font-weight: bold;	
 	border-bottom-style: solid;
-	border-bottom-width: thin;
+	border-width: thin;
+	border-color: #ffdead;
 }
-
-.footeemail {
-	grid-area: email;
-}
-
-.footerPhone {
-	grid-area: phone;
-}
-
-.footerWhatsapp {
-	grid-area: whatsapp;
-}
-
-.footerOpenStore {
-	grid-area: openStore;
-}
-
-.footerContentTitle {
-	grid-area: contentTitle;
-	border-bottom-style: solid;
-	border-bottom-width: thin;
-}
-
-.footerHome {
-	grid-area: home;
-}
-
-.footerUs {
-	grid-area: us;
-}
-
-.footerContact {
-	grid-area:  contact;
-}
-
-.footerNewsletterTitle {
-	grid-area: newsLetterTitle;	
-	border-bottom-style: solid;
-	border-bottom-width: thin;
-}
-
-.footernewsLetterInput {
-	grid-area: newsLetterInput;	
-}
-
-.footerFollowUsTitle {
-	grid-area: followUsTitle;
-	border-bottom-style: solid;
-	border-bottom-width: thin;
-}
-
-.footerFacebook {
-	grid-area: facebook;
-}
-
-.footerInstagram {
-	grid-area: instagram;
-}
-
-.footerRegisteredBrand {
-	grid-area: registeredBrand;
-	justify-self: center;		
-	padding: 0 5px;
-	background-color: #993300;	
-	border-radius: 10px;
-}
-
 
 .footerNewsletterText {
 	margin: 0;
