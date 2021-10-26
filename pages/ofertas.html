@@ -10,33 +10,36 @@
 <body>
 	<header>
 		<div class="stamp">
-			<a href="../index.html"><img src="../images/logo-cozza-small.gif" alt="Logo de Casa Cozza"></a>
+			<img src="../images/logo-cozza-small.gif" alt="Logo de Casa Cozza">
 			<span class="stampTitle">Casa Cozza</span>
 			<span class="stampSubTitle">Polirubros</span>			
-		</div>
-		<nav>
-			<ul>
-				<li>
-					<a class="itemMenu" href="../index.html">Inicio</a>				
-				</li>
-				<li>
-					<a class="itemMenu" href="../pages/productos.html">Productos</a>
-					<ul class="submenu">
-						<li><a href="#">Limpieza</a></li>
-						<li><a href="#">Bazar</a></li>
-						<li><a href="#">Perfumería</a></li>
-						<li><a href="#">Pet Shop</a></li>
-						<li><a href="#">Varios</a></li>
-					</ul>
-				</li>
-				<li>
-					<a class="itemMenu" href="../pages/nosotros.html">Nosotros</a>				
-				</li>
-				<li>
-					<a class="itemMenu" href="../pages/contacto.html">Contacto</a>				
-				</li>
-				<li class="selectedItemMenu">Ofertas</li>			
-			</ul>
+		</div>		
+		<nav class="navbar navbar-expand-lg align-items-end align-self-center">	
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarcollapse">
+				<ul class="navbar-nav justify-content-between w-100">
+					<li class="itemMenu"><a href="../index.html">Inicio</a></li>
+					<li>
+						<a class="itemMenu" href="productos.html">Productos</a>
+						<ul class="submenu primary">
+							<li><a href="productos.html#limpieza">Limpieza</a></li>
+							<li><a href="productos.html#bazar">Bazar</a></li>
+							<li><a href="productos.html#perfumeria">Perfumería</a></li>
+							<li><a href="productos.html#petshop">Pet Shop</a></li>
+							<li><a href="productos.html#varios">Varios</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="itemMenu" href="nosotros.html">Nosotros</a>	
+					</li>
+					<li>
+						<a class="itemMenu" href="contacto.html">Contacto</a>	
+					</li>
+					<li class="selectedItemMenu">Ofertas</li>
+				</ul>
+			</div>					
 		</nav>				
 	</header>
 	<main>

@@ -63,16 +63,16 @@ main {
 nav {
 	font-size: 1.2rem;	
 	width: 700px;
-	height: 30px;
-	align-self:  center;
 	padding: 0 40px;
 }
 
-nav > ul {	
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;	
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,222,173)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.navbar-toggler {
+  border-color: rgb(255, 222, 173);
+} 
 
 .submenu {
 	position: absolute;
@@ -83,7 +83,7 @@ ul.submenu > li {
 	display: block;
 }
 
-nav > ul > li:hover ul {
+nav > div > ul > li:hover ul {
 	display: block;	
 	margin-top: -2px;	
 	background-color: #993300;
@@ -97,15 +97,17 @@ nav > ul > li:hover ul {
 }
 
 .itemMenu {
-	display: flex;
+	/*display: flex;
 	flex-flow: column;
-	align-items: center;
+	align-items: center;*/
 	font-size: 1.2rem;	
+	color: #ffdead;
 }
 
 a.itemMenu:hover {
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
+	color: #ffdead;
 }
 
 .selectedItemMenu {	
@@ -179,7 +181,7 @@ footer {
 }
 
 /* media queries */
-@media only screen and (max-width: 320px)
+/*@media only screen and (max-width: 320px)
 {
 	div.stamp > img {
 		width: 40px;
@@ -296,4 +298,4 @@ footer {
 	.footernewsLetterInput {
 		display: none;
 	}	
-}
+}*/
