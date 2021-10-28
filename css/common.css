@@ -163,21 +163,23 @@ footer {
 
 .footerNewsletterText {
 	margin: 0;
-	width: 150px;
+	width: 50%;
 	height: 25px;	
 	background-color:  white;
 	border: solid;
 	padding-left: 5px;
 	border-style: none;
+	font-size: 0.8rem;
 }
 
 .footerNewsletterButton {
 	margin-left: -3px;	
 	background-color: #ffdead;
-	width: 120px;	
+	width: 45%;	
 	height: 25px;
 	font-weight: bolder;
 	border-style: none;	
+	font-size: 0.8rem;
 }
 
 /* media queries */
