@@ -1,0 +1,25 @@
+{
+  "name": "web-cozza",
+  "version": "1.0.0",
+  "description": "Desarrollo Web Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass sass/main.scss style.css && node-sass sass/common.scss css/common.css && node-sass sass/contact.scss css/contact.css && node-sass sass/us.scss css/us.css && node-sass sass/offers.scss css/offers.css && node-sass sass/products.scss css/products.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mferrayra/web-cozza.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mferrayra/web-cozza/issues"
+  },
+  "homepage": "https://github.com/mferrayra/web-cozza#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.14"
+  }
+}

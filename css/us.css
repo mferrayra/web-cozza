@@ -1,0 +1,28 @@
+@import url(common.css);
+h2 {
+  margin: 10px 0 10px;
+  font-size: 2em; }
+
+article {
+  font-size: 1.5em; }
+
+article p {
+  line-height: 1.4em;
+  font-style: italic; }
+
+.flexHistory {
+  display: flex; }
+
+.imgHistory {
+  width: 250px;
+  margin: 0 0 30px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #993300;
+  border-radius: 10px; }
+
+div.flexHistory p {
+  margin: 20px;
+  font-size: 0.9em;
+  font-style: normal;
+  margin-top: 0; }
