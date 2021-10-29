@@ -16,34 +16,91 @@ body {
 	background:  linear-gradient(45deg, #00c4f0, #00c4f0, #ffdead, #ffdead);
 	font-family: 'Roboto', sans-serif;
 	height: 100%;
-}
 
+	/* header */
+	header {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 10px 15px 10px;
+		background-color: #993300;
+		border-bottom-color: #00c4f0;
+		border-bottom-style: solid;
+		border-width: 3px;
+		color: #ffdead;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 1;
 
-/* header */
-header {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 10px 15px 10px;
-	background-color: #993300;
-	border-bottom-color: #00c4f0;
-	border-bottom-style: solid;
-	border-width: 3px;
-	color: #ffdead;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	z-index: 1;
+		/* navbar */
+		nav {
+			font-size: 1.2rem;	
+			width: 700px;
+			padding: 0 40px;
 
-	/* navbar */
-	nav {
-		font-size: 1.2rem;	
-		width: 700px;
-		padding: 0 40px;
+			div {
+				ul {
+					li:hover {
+						ul {
+							display: block;	
+							margin-top: -2px;	
+							background-color: #993300;
+							width: 125px;	
+							padding: 15px;	
+							font-size: 0.9em;
+							line-height: 2em;
+							border-top-style: solid;
+							border-top-width: 3px;
+							border-color: #ffdead;
+							li {
+								a {
+									color: #ffdead;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
-}
 
-main {
-	margin-top: 10px;
+	h1 {
+		margin: 30px 0 20px;
+		font-size: 2.5em;
+	}
+
+	a {
+		text-decoration: none;	
+		font-family: 'Roboto', sans-serif;
+		color: #ffdead;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	main {
+		margin-top: 70px;
+		padding: 15px;
+		height: 800px;
+	}
+
+	footer {	
+		background-color: #993300;
+		color: #ffdead;		
+		border-top-style: solid;
+		border-color: #00c4f0;
+		border-width: 3px;	
+		font-size: 1rem;
+		line-height: 1.4rem;
+		width: 100%;
+
+		a:hover {
+			border-bottom-style: solid;
+			border-bottom-width: thin;
+			color: #ffdead;
+		}
+	}
 }
 
 /* brand */
@@ -74,113 +131,65 @@ main {
   border-color: rgb(255, 222, 173);
 } 
 
-.submenu {
+.header__navbar__submenu {
 	position: absolute;
 	display: none;
 }
 
-ul.submenu > li {
-	display: block;
+ul.header__navbar__submenu {
+	li {
+		display: block;
+	}
+	li:hover {
+		font-weight: bold;
+	}	
 }
 
-nav > div > ul > li:hover ul {
-	display: block;	
-	margin-top: -2px;	
-	background-color: #993300;
-	width: 125px;	
-	padding: 15px;	
-	font-size: 0.9em;
-	line-height: 2em;
-	border-top-style: solid;
-	border-top-width: 3px;
-	border-color: #ffdead;
-}
-
-.itemMenu {	
+.header__navbar__link {	
 	font-size: 1.2rem;	
 	color: #ffdead;
+	&--selected {
+		font-weight: bold;
+		font-size: 1.1em;
+		color: #00c4f0;
+	}
 }
 
-a.itemMenu:hover {
+a.header__navbar__link:hover {
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
 	color: #ffdead;
 }
 
-.selectedItemMenu {	
-	font-weight: bold;
-	font-size: 1.1em;
-	color: #00c4f0;
-}
-
-ul.submenu > li:hover {
-	font-weight: bold;
-}
-
-/* tags */
-h1 {
-	margin: 30px 0 20px;
-	font-size: 2.5em;
-}
-
-a {
-	text-decoration: none;	
-	font-family: 'Roboto', sans-serif;
-	color: #ffdead;
-}
-
-ul {
-	list-style: none;
-}
-
-main {
-	margin-top: 70px;
-	padding: 15px;
-	height: 800px;
-}
-
-/* footer */
-footer {	
-	background-color: #993300;
-	color: #ffdead;		
-	border-top-style: solid;
-	border-color: #00c4f0;
-	border-width: 3px;	
-	font-size: 1rem;
-	line-height: 1.4rem;
-	width: 100%;
-}
-
-footer a:hover {
-	border-bottom-style: solid;
-	border-bottom-width: thin;
-	color: #ffdead;
-}
-
-.footerTitle {
-	font-weight: bold;	
-	border-bottom-style: solid;
-	border-width: thin;
-	border-color: #ffdead;
-}
-
-.footerNewsletterText {
-	margin: 0;
-	width: 50%;
-	height: 25px;	
-	background-color:  white;
-	border: solid;
-	padding-left: 5px;
-	border-style: none;
-	font-size: 0.8rem;
-}
-
-.footerNewsletterButton {
-	margin-left: -3px;	
-	background-color: #ffdead;
-	width: 45%;	
-	height: 25px;
-	font-weight: bolder;
-	border-style: none;	
-	font-size: 0.8rem;
+.footer {
+	&__link--selected {
+		font-weight: bold;
+		font-size: 1.1em;
+		color: #00c4f0;
+	}
+	&__title--boldWithBottomBorder{
+		font-weight: bold;	
+		border-bottom-style: solid;
+		border-width: thin;
+		border-color: #ffdead;
+	}
+	&__newsletterText {
+		margin: 0;
+		width: 50%;
+		height: 25px;	
+		background-color:  white;
+		border: solid;
+		padding-left: 5px;
+		border-style: none;
+		font-size: 0.8rem;
+	}
+	&__newsletterButton {
+		margin-left: -3px;	
+		background-color: #ffdead;
+		width: 45%;	
+		height: 25px;
+		font-weight: bolder;
+		border-style: none;	
+		font-size: 0.8rem;
+	}
 }
