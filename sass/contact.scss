@@ -11,46 +11,48 @@ fieldset {
   	padding: 30px;  	
   	font-size: 1.2em;  
   	width: 80%;	
+	
+	input {
+		margin: 20px 0 0 20px;
+		width:  150px;
+		height:  40px;
+		background-color: #ffdead;
+		font-weight: bold;
+	}
+
+	input[Type="text"] {	
+		width:  95%;
+		margin: 5px 0px;
+		background-color:  white;
+		font-weight: 200;
+	}  	
 }
 
-fieldset input {
-	margin: 20px 0 0 20px;
-	width:  150px;
-	height:  40px;
-	background-color: #ffdead;
-	font-weight: bold;
-}
+.formContact {
+	&__data {
+		display:  flex;
+		flex-direction: column;
+		align-items: left;
+		width: 600px;
+	}
 
-fieldset input[Type="text"] {	
-	width:  95%;
-	margin: 5px 0px;
-	background-color:  white;
-	font-weight: 200;
-}
+	&__buttons {
+		display:  flex;
+		flex-direction: column;
+		align-items: center;
 
-.contactData {
-	display:  flex;
-	flex-direction: column;
-	align-items: left;
-	width: 600px;	
-}
+		&__imgAnswer {
+			margin-top: 20px;
+			margin-left: 10px;
+			height:  150px;
+			border-style: solid;
+			border-radius:  120px;
+			border-width: 6px;		
+		}
 
-.buttonsData {
-	display:  flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.imgAnswer {
-	margin-top: 20px;
-	margin-left: 10px;
-	height:  150px;
-	border-style: solid;
-	border-radius:  120px;
-	border-width: 6px;
-}
-
-.message {
-	margin-left:  10px;
-	font-style: italic;
+		&__message {
+			margin-left:  10px;
+			font-style: italic;	
+		}
+	}
 }
