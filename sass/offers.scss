@@ -1,9 +1,53 @@
 @import "common";
 
+@keyframes priceSkinCard {
+  0% { 
+  	color: $skin-color;
+  	background-color: $brown-color;
+  	border-style: solid;
+  }
+  50% { 
+  	color: $brown-color;
+  	background-color: $skin-color;
+  	border-style: dashed;
+  	border-with: thin;
+  }
+  100% { 
+  	color: $light-blue-color;
+  	background-color: $skin-color;
+  	border-style: solid; 
+  }
+}
+
+@keyframes priceLightBlueCard {
+  0% { 
+  	color: $light-blue-color; 
+  	background-color: $brown-color;
+  	border-style: solid;
+  }
+  50% { 
+  	color: $brown-color;
+  	background-color: $light-blue-color;
+  	border-style: dashed;
+  	border-with: thin;
+  }
+  100% { 
+  	color: $skin-color; 
+  	background-color: $light-blue-color;
+  	border-style: solid; 
+  }
+}
+
 @each $rubro in limpieza, bazar, perfumeria {
 	.#{$rubro}__card {
 		background-color: if($rubro == limpieza, $skin-color, $light-blue-color);
 		color: $brown-color;
-		width: 400px;		
+		width: 400px;
+
+		&__price {
+			animation-name: if($rubro == limpieza, priceSkinCard, priceLightBlueCard);
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+		}		
 	}
 }

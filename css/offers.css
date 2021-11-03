@@ -144,17 +144,59 @@ a.header__navbar__link:hover {
   border-style: none;
   font-size: 0.8rem; }
 
+@keyframes priceSkinCard {
+  0% {
+    color: #ffdead;
+    background-color: #993300;
+    border-style: solid; }
+  50% {
+    color: #993300;
+    background-color: #ffdead;
+    border-style: dashed;
+    border-with: thin; }
+  100% {
+    color: #00c4f0;
+    background-color: #ffdead;
+    border-style: solid; } }
+
+@keyframes priceLightBlueCard {
+  0% {
+    color: #00c4f0;
+    background-color: #993300;
+    border-style: solid; }
+  50% {
+    color: #993300;
+    background-color: #00c4f0;
+    border-style: dashed;
+    border-with: thin; }
+  100% {
+    color: #ffdead;
+    background-color: #00c4f0;
+    border-style: solid; } }
+
 .limpieza__card {
   background-color: #ffdead;
   color: #993300;
   width: 400px; }
+  .limpieza__card__price {
+    animation-name: priceSkinCard;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; }
 
 .bazar__card {
   background-color: #00c4f0;
   color: #993300;
   width: 400px; }
+  .bazar__card__price {
+    animation-name: priceLightBlueCard;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; }
 
 .perfumeria__card {
   background-color: #00c4f0;
   color: #993300;
   width: 400px; }
+  .perfumeria__card__price {
+    animation-name: priceLightBlueCard;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; }
