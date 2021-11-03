@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 /* font family - fontawesome  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
@@ -146,6 +143,137 @@ a.header__navbar__link:hover {
   font-weight: bolder;
   border-style: none;
   font-size: 0.8rem; }
+
+fieldset {
+  display: flex;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #993300;
+  color: #993300;
+  margin: 50px 20px;
+  padding: 30px;
+  font-size: 1.2em;
+  width: 80%; }
+  fieldset input {
+    margin: 20px 0 0 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #ffdead;
+    font-weight: bold; }
+  fieldset input[Type="text"] {
+    width: 95%;
+    margin: 5px 0px;
+    background-color: #ffffff;
+    font-weight: 200; }
+
+.formContact__data {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 600px; }
+
+.formContact__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .formContact__buttons__imgAnswer {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 150px;
+    border-style: solid;
+    border-radius: 120px;
+    border-width: 6px; }
+  .formContact__buttons__message {
+    margin-left: 10px;
+    font-style: italic; }
+
+@keyframes priceSkinCard {
+  0% {
+    color: #ffdead;
+    background-color: #993300;
+    border-style: solid; }
+  50% {
+    color: #993300;
+    background-color: #ffdead;
+    border-style: dashed;
+    border-with: thin; }
+  100% {
+    color: #00c4f0;
+    background-color: #ffdead;
+    border-style: solid; } }
+
+@keyframes priceLightBlueCard {
+  0% {
+    color: #00c4f0;
+    background-color: #993300;
+    border-style: solid; }
+  50% {
+    color: #993300;
+    background-color: #00c4f0;
+    border-style: dashed;
+    border-with: thin; }
+  100% {
+    color: #ffdead;
+    background-color: #00c4f0;
+    border-style: solid; } }
+
+.limpieza__card {
+  background-color: #ffdead;
+  color: #993300;
+  width: 400px; }
+  .limpieza__card__price {
+    animation-name: priceSkinCard;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; }
+
+.bazar__card {
+  background-color: #00c4f0;
+  color: #993300;
+  width: 400px; }
+  .bazar__card__price {
+    animation-name: priceLightBlueCard;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; }
+
+.perfumeria__card {
+  background-color: #00c4f0;
+  color: #993300;
+  width: 400px; }
+  .perfumeria__card__price {
+    animation-name: priceLightBlueCard;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; }
+
+h2 {
+  margin: 10px 0 10px;
+  font-size: 2em;
+  font-family: 'Lobster', cursive; }
+
+section {
+  height: 1050px; }
+
+.section__compromiso {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-style: italic; }
+
+.section__history {
+  margin: 20px;
+  font-size: 1.3rem;
+  font-style: normal;
+  margin-top: 0; }
+
+@media (max-width: 768px) {
+  .section__compromiso {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    font-style: italic; }
+  .section__history {
+    margin: 20px;
+    font-size: 1rem;
+    font-style: normal;
+    margin-top: 0; } }
 
 body h1 {
   position: absolute;
