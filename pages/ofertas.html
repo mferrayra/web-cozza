@@ -8,101 +8,106 @@
 	<link rel="stylesheet" href="../css/offers.css">
 </head>
 <body>
-	<header>
-		<div class="header__stamp">
-			<img src="../images/logo-cozza-small.gif" alt="Logo de Casa Cozza">
-			<span class="header__stamp__stampTitle">Casa Cozza</span>
-			<span class="header__stamp__stampSubTitle">Polirubros</span>			
-		</div>		
-		<nav class="navbar navbar-expand-lg align-items-end align-self-center">	
-			<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarcollapse">
-				<ul class="navbar-nav justify-content-between w-100">
-					<li><a class="header__navbar__link" href="../index.html"><i class="fas fa-house-user"></i> Inicio</a></li>
-					<li>
-						<a class="header__navbar__link" href="productos.html"><i class="fa fa-soap"></i> Productos</a>
-						<ul class="header__navbar__submenu">
-							<li><a href="productos.html#limpieza">Limpieza</a></li>
-							<li><a href="productos.html#bazar">Bazar</a></li>
-							<li><a href="productos.html#perfumeria">Perfumería</a></li>
-							<li><a href="productos.html#petshop">Pet Shop</a></li>
-							<li><a href="productos.html#varios">Varios</a></li>
+	<header class="container-fluid p-2">
+		<div class="row">
+			<div class="col-3">
+				<div class="row header__stamp">
+					<div class="col-4 h-100">
+						<img class="h-100" src="../images/logo-cozza.png" alt="Logo de Casa Cozza">		
+					</div>
+					<div class="col-8 h-100">
+						<span class="row h-50 header__stamp__stampTitle--fontsize">Casa Cozza</span>
+						<span class="row h-50 justify-content-center header__stamp__stampSubTitle--fontsize">Polirubros</span>
+					</div>
+				</div>	
+			</div>
+			<div class="col-6 offset-3 align-self-center">
+				<nav class="navbar navbar-expand-lg align-items-end align-self-center justify-content-end w-100 h-100">	
+					<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarcollapse">
+						<ul class="navbar-nav justify-content-between w-100 text-end">
+							<li><a class="header__navbar__link" href="../index.html"><i class="fas fa-house-user"></i> Inicio</li></a>
+							<li>
+								<a class="header__navbar__link" href="productos.html"><i class="fa fa-soap d-none d-sm-inline d-sm-none d-md-inline"></i> Productos</a>
+								<ul class="header__navbar__submenu">
+									<li><a href="productos.html#limpieza">Limpieza</a></li>
+									<li><a href="productos.html#bazar">Bazar</a></li>
+									<li><a href="productos.html#perfumeria">Perfumería</a></li>
+									<li><a href="productos.html#petshop">Pet Shop</a></li>
+									<li><a href="productos.html#varios">Varios</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="header__navbar__link" href="nosotros.html"><i class="fas fa-user-tie d-none d-sm-inline d-sm-none d-md-inline"></i> Nosotros</a>
+							</li>
+							<li>
+								<a class="header__navbar__link" href="contacto.html"><i class="fas fa-align-justify d-none d-sm-inline d-sm-none d-md-inline"></i> Contacto</a>	
+							</li>
+							<li class="header__navbar__link--selected">
+								<i class="fa fa-bullhorn d-none d-sm-inline d-sm-none d-md-inline"></i> Ofertas
+							</li>			
 						</ul>
-					</li>
-					<li>
-						<a class="header__navbar__link" href="nosotros.html"><i class="fas fa-user-tie"></i> Nosotros</a>	
-					</li>
-					<li>
-						<a class="header__navbar__link" href="contacto.html"><i class="fas fa-align-justify"></i> Contacto</a>	
-					</li>
-					<li class="header__navbar__link--selected"><i class="fa fa-bullhorn"></i> Ofertas</li>
-				</ul>
-			</div>					
-		</nav>				
+					</div>	
+				</nav>	
+			</div>
+		</div>		
 	</header>
 	<main>
 		<h1>Ofertas del mes</h1>
 		<section>
-			<table>
-				<thead>
-					<tr>
-						<td>Combos</td>
-						<td>publicado</td>
-						<td>Productos</td>
-						<td>Precio</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Limpieza</td>
-						<td>20-09-2021</td>
-						<td>
-							<ol>
-								<li>DET. CIF ACTIVE GEL LIMON 750 CC</li>
-								<li>LAVANDINA DEA X 4 LTS.</li>
-								<li>ARIEL LIQUIDO X 800 ML</li>
-								<li>TRAPO DE PISO BLANCO CONSORCIO</li>
-								<li>TRAPO DE PISO BLANCO CONSORCIO</li>
-							</ol>
-						</td>	
-						<td>350,80</td>
-					</tr>
-					<tr>
-						<td>Bazar</td>
-						<td>21-09-2021</td>
-						<td>
-							<ol>
-								<li>BALDE OVAL 15 LTS. C/ ESCURRIDOR DESES</li>						
-								<li>PALANGANA 6 LTS.</li>
-								<li>EMBUDO ECO NRO 12</li>
-							</ol>
-						</td>	
-						<td>445,50</td>
-					</tr>
-					<tr>
-						<td>Perfumería</td>
-						<td>21-09-2021</td>
-						<td>
-							<ol>
-								<li>PRESTOBARBA ULTRA GRIP</li>						
-								<li>ESPUMA PRESTOBARBA NORMAL</li>						
-							</ol>
-						</td>	
-						<td>200,00</td>
-					</tr>
-					<tr>
-						<td>Pet Shop</td>
-						<td colspan="3">
-							<h3>No hay ofertas disponibles</h3>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<ul class="container d-flex flex-wrap justify-content-between">
+				<li class="card p-3 mt-2 border border-dark limpieza__card">
+					<ol class="card-body">
+						<div class="row">
+							<div class="col-6">
+								<h5 class="card-title"><b>Limpieza</b></h5>	
+							</div>
+							<div class="col-6">
+								<h4 class="card-title">$ 790,00</h4>	
+							</div>	
+						</div>						
+						<li>DET. CIF ACTIVE GEL LIMON 750 CC</li>
+						<li>LAVANDINA DEA X 4 LTS.</li>
+						<li>ARIEL LIQUIDO X 800 ML</li>
+						<li>TRAPO DE PISO BLANCO CONSORCIO</li>
+						<li>TRAPO DE PISO BLANCO CONSORCIO</li>
+					</ol>
+				</li>
+				<li class="card p-3 mt-3 border border-dark bazar__card">
+					<ol class="card-body">
+						<div class="row">
+							<div class="col-6">
+								<h5 class="card-title"><b>Bazar</b></h5>	
+							</div>
+							<div class="col-6">
+								<h4 class="card-title">$ 1150,26</h4>	
+							</div>	
+						</div>						
+						<li>BALDE OVAL 15 LTS. C/ ESCURRIDOR DESES</li>						
+						<li>PALANGANA 6 LTS.</li>
+						<li>EMBUDO ECO NRO 12</li>
+					</ol>
+				</li>				
+				<li class="card p-3 mt-2 border border-dark perfumeria__card">
+					<ol class="card-body">
+						<div class="row">
+							<div class="col-6">
+								<h5 class="card-title"><b>Perfumería</b></h5>	
+							</div>
+							<div class="col-6">
+								<h4 class="card-title">$ 950,26</h4>	
+							</div>	
+						</div>						
+						<li>PRESTOBARBA ULTRA GRIP</li>
+						<li>ESPUMA PRESTOBARBA NORMAL</li>
+					</ol>
+				</li>
+			</ul>			
 		</section>
 	</main>	
-	<footer>
+	<footer class="footer fixed-bottom">
 		<div class="container-fluid p-3">
 			<div class="row p-1">
 				<div class="col col-6 col-md-3">

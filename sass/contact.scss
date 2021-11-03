@@ -1,12 +1,12 @@
-@import "common.css";
+@import "common";
 
 fieldset {
 	display:  flex;		
 	border-style: solid;
 	border-width: 3px;
 	border-radius: 10px;
-	border-color: #993300;
-  	color: #993300;  	
+	border-color: $brown-color;
+  	color: $brown-color;  	
   	margin: 50px 20px;
   	padding: 30px;  	
   	font-size: 1.2em;  
@@ -16,14 +16,14 @@ fieldset {
 		margin: 20px 0 0 20px;
 		width:  150px;
 		height:  40px;
-		background-color: #ffdead;
+		background-color: $skin-color;
 		font-weight: bold;
 	}
 
 	input[Type="text"] {	
 		width:  95%;
 		margin: 5px 0px;
-		background-color:  white;
+		background-color:  $white-color;
 		font-weight: 200;
 	}  	
 }

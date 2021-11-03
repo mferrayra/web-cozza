@@ -1,36 +1,9 @@
-@import "common.css";
+@import "common";
 
-table {
-	margin: 20px;
-	border-collapse: collapse;
-	width: 90%;
-
-	thead {
-	  padding-top: 12px;
-	  padding-bottom: 12px;
-	  text-align: left;
-	  background-color: #993300;
-	  color: #ffdead;
-
-	  tr {
-	  	td {
-			border: 1px solid #993300;
-  			padding: 8px;
-	  	}
-	  }
-	}
-
-	tbody {
-		tr {
-			td {
-				border: 1px solid #993300;
-  				padding: 8px;
-
-  				ol {
-  					margin-left: 8px;
-					padding: 5px;			
-  				}
-			}
-		}
+@each $rubro in limpieza, bazar, perfumeria {
+	.#{$rubro}__card {
+		background-color: if($rubro == limpieza, $skin-color, $light-blue-color);
+		color: $brown-color;
+		width: 400px;		
 	}
 }

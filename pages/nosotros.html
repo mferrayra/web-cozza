@@ -8,65 +8,77 @@
 	<link rel="stylesheet" href="../css/us.css">	
 </head>
 <body>
-	<header>
-		<div class="header__stamp">
-			<img src="../images/logo-cozza-small.gif" alt="Logo de Casa Cozza">
-			<span class="header__stamp__stampTitle">Casa Cozza</span>
-			<span class="header__stamp__stampSubTitle">Polirubros</span>			
-		</div>		
-		<nav class="navbar navbar-expand-lg align-items-end align-self-center">	
-			<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarcollapse">
-				<ul class="navbar-nav justify-content-between w-100">
-					<li><a class="header__navbar__link" href="../index.html"><i class="fas fa-house-user"></i> Inicio</a></li>
-					<li>
-						<a class="header__navbar__link" href="productos.html"><i class="fa fa-soap"></i> Productos</a>
-						<ul class="header__navbar__submenu">
-							<li><a href="productos.html#limpieza">Limpieza</a></li>
-							<li><a href="productos.html#bazar">Bazar</a></li>
-							<li><a href="productos.html#perfumeria">Perfumería</a></li>
-							<li><a href="productos.html#petshop">Pet Shop</a></li>
-							<li><a href="productos.html#varios">Varios</a></li>
+	<header class="container-fluid p-2">
+		<div class="row">
+			<div class="col-3">
+				<div class="row header__stamp">
+					<div class="col-4 h-100">
+						<img class="h-100" src="../images/logo-cozza.png" alt="Logo de Casa Cozza">		
+					</div>
+					<div class="col-8 h-100">
+						<span class="row h-50 header__stamp__stampTitle--fontsize">Casa Cozza</span>
+						<span class="row h-50 justify-content-center header__stamp__stampSubTitle--fontsize">Polirubros</span>
+					</div>
+				</div>	
+			</div>
+			<div class="col-6 offset-3 align-self-center">
+				<nav class="navbar navbar-expand-lg align-items-end align-self-center justify-content-end w-100 h-100">	
+					<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarcollapse">
+						<ul class="navbar-nav justify-content-between w-100 text-end">
+							<li><a class="header__navbar__link" href="../index.html"><i class="fas fa-house-user"></i> Inicio</li></a>
+							<li>
+								<a class="header__navbar__link" href="productos.html"><i class="fa fa-soap d-none d-sm-inline d-sm-none d-md-inline"></i> Productos</a>
+								<ul class="header__navbar__submenu">
+									<li><a href="productos.html#limpieza">Limpieza</a></li>
+									<li><a href="productos.html#bazar">Bazar</a></li>
+									<li><a href="productos.html#perfumeria">Perfumería</a></li>
+									<li><a href="productos.html#petshop">Pet Shop</a></li>
+									<li><a href="productos.html#varios">Varios</a></li>
+								</ul>
+							</li>
+							<li class="header__navbar__link--selected">
+								<i class="fas fa-user-tie d-none d-sm-inline d-sm-none d-md-inline"></i> Nosotros
+							</li>
+							<li>
+								<a class="header__navbar__link" href="contacto.html"><i class="fas fa-align-justify d-none d-sm-inline d-sm-none d-md-inline"></i> Contacto</a>	
+							</li>
+							<li>
+								<a class="header__navbar__link" href="ofertas.html"><i class="fa fa-bullhorn d-none d-sm-inline d-sm-none d-md-inline"></i> Ofertas</a>
+							</li>			
 						</ul>
-					</li>
-					<li class="header__navbar__link--selected"><i class="fas fa-user-tie"></i> Nosotros</li>
-					<li>
-						<a class="header__navbar__link" href="contacto.html"><i class="fas fa-align-justify"></i> Contacto</a>	
-					</li>
-					<li>
-						<a class="header__navbar__link" href="ofertas.html"><i class="fa fa-bullhorn"></i> Ofertas</a>		
-					</li>			
-				</ul>
-			</div>					
-		</nav>				
+					</div>	
+				</nav>	
+			</div>
+		</div>		
 	</header>
-	<main>
+	<main class="container">
 		<section>			
 			<h1>Nuestro compromiso</h1>
 			<article>				
-				<p>
+				<p class="section__compromiso">
 					<b><u>Pasión por lo que hacemos:</u></b> escuchamos y asesoramos a cada quien para que salga satisfecho de su compra, desde la elección de sus necesidades, hasta la forma y medios de pagos que pueda utilizar.
 				</p>
 			</article>
 			<h2>Nuestra historia</h2>
-			<div class="history">
-				<img class="history__img" src="../images/nono.png" alt="Juan Cozza y flía. venido de Italia">				
-				<article>					
-					<p class="history__text">
-						Todo comienza en 1943, cuando nuestro antepasado Juan Cozza llegado desde Italia con su familia desde algún tiempo; se radica en la ciudad de Santa Fé. 
+			<div class="row">				
+				<img class="col col-12 col-md-3 d-none d-sm-inline d-sm-none d-md-inline" src="../images/nono.png" alt="Juan Cozza y flía. venido de Italia">				
+				<article class="col col-12 col-md-9">					
+					<p class="section__history">
+						Todo comienza en <b>1943</b>, cuando nuestro antepasado <b>Juan Cozza</b> llegado desde Italia con su familia desde algún tiempo; se radica en la ciudad de Santa Fé. 
 						Dado sus conocimientos en la fabricación de plumeros, y que por aquella epoca eran escasos en la ciudad, rapidamente se dispone a la fabricación de estos, con el fin de proveer a negocios locales y vendedores ambulantes que llevarian su producto a otras localidades.
 
-						Más tarde su hijo Francisco, continuó con la fabricación y además en 1987 inicia su primer comercio familiar en el garage de su casa, pasando a vender desde plumeros hasta variados artículos de limpieza de todo tipo y calidad; orientando su atención hacia clientes minoristas.
+						Más tarde su hijo <b>Francisco</b>, continuó con la fabricación y además en <b>1987</b> inicia su primer comercio familiar en el garage de su casa, pasando a vender desde plumeros hasta variados artículos de limpieza de todo tipo y calidad; orientando su atención hacia clientes minoristas.
 
-						Hoy día Casa Cozza, es un comercio que no solo mantiene los valores familiares y de nombre, si no que se adecua a las necesidades de las personas y de nuestro tiempo.
+						Hoy día <b>Casa Cozza</b>, es un comercio que no solo mantiene los valores familiares y de nombre, si no que se adecua a las necesidades de las personas y se renueva acorde a nuestro tiempo.
 					</p>
 				</article>
 			</div>			
 		</section>
 	</main>	
-	<footer>
+	<footer class="footer fixed-bottom">
 		<div class="container-fluid p-3">
 			<div class="row p-1">
 				<div class="col col-6 col-md-3">

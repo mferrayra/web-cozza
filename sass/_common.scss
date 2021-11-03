@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
 
+$white-color: #ffffff;
+$black-color: #000000;
+$brown-color: #993300; 
+$skin-color: #ffdead;
+$skin-color-rgb: rgb(255,222,173); /*por el stoke del url (backgroung-image => toogle button)*/
+$light-blue-color: #00c4f0;
+
 /* reset margin-padding  */
 * {
 	margin: 0;
@@ -12,21 +19,18 @@
 /* body */
 body {
 	display: flex;
-	flex-direction: column;
-	background:  linear-gradient(45deg, #00c4f0, #00c4f0, #ffdead, #ffdead);
+	background:  linear-gradient(45deg, $light-blue-color 50%, $skin-color 50%);
+	flex-direction: column;	
 	font-family: 'Roboto', sans-serif;
-	height: 100%;
+	min-height: 100%;
 
 	/* header */
-	header {
-		display: flex;
-		justify-content: space-between;
-		padding: 10px 10px 15px 10px;
-		background-color: #993300;
-		border-bottom-color: #00c4f0;
+	header {		
+		background-color: $brown-color;
+		border-bottom-color: $black-color;
 		border-bottom-style: solid;
 		border-width: 3px;
-		color: #ffdead;
+		color: $skin-color;
 		width: 100%;
 		position: fixed;
 		top: 0;
@@ -44,17 +48,17 @@ body {
 						ul {
 							display: block;	
 							margin-top: -2px;	
-							background-color: #993300;
+							background-color: $brown-color;
 							width: 125px;	
 							padding: 15px;	
 							font-size: 0.9em;
 							line-height: 2em;
 							border-top-style: solid;
 							border-top-width: 3px;
-							border-color: #ffdead;
+							border-color: $skin-color;
 							li {
 								a {
-									color: #ffdead;
+									color: $skin-color;
 								}
 							}
 						}
@@ -67,12 +71,13 @@ body {
 	h1 {
 		margin: 30px 0 20px;
 		font-size: 2.5em;
+		font-family: 'Lobster', cursive;
 	}
 
 	a {
 		text-decoration: none;	
 		font-family: 'Roboto', sans-serif;
-		color: #ffdead;
+		color: $skin-color;
 	}
 
 	ul {
@@ -80,25 +85,24 @@ body {
 	}
 
 	main {
-		margin-top: 70px;
+		margin-top: 70px;		
 		padding: 15px;
-		height: 800px;
+		height: 1000px;
 	}
 
-	footer {	
-		background-color: #993300;
-		color: #ffdead;		
+	footer {		
+		background-color: $brown-color;
+		color: $skin-color;		
 		border-top-style: solid;
-		border-color: #00c4f0;
+		border-color: $black-color;
 		border-width: 3px;	
 		font-size: 1rem;
 		line-height: 1.4rem;
-		width: 100%;
 
 		a:hover {
 			border-bottom-style: solid;
 			border-bottom-width: thin;
-			color: #ffdead;
+			color: $skin-color;
 		}
 	}
 }
@@ -106,29 +110,24 @@ body {
 /* brand */
 .header__stamp {	
 	font-family: 'Lobster', cursive;
-	display: grid;
-	grid-template:  40px 40px / 110px 180px;
+	height: 90px;
+	width: 350px;	
 }
 
-.header__stamp__stampTitle {
+.header__stamp__stampTitle--fontsize {
 	font-size: 2.5rem;
-	grid-column-start: 2;	
-	place-self: end;
-	align-self: start;
 }
 
-.header__stamp__stampSubTitle {
+.header__stamp__stampSubTitle--fontsize {
 	font-size: 1.5rem;
-	grid-column-start: 2;	
-	place-self: center;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,222,173)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$skin-color-rgb}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler {
-  border-color: rgb(255, 222, 173);
+  border-color: $skin-color;
 } 
 
 .header__navbar__submenu {
@@ -139,6 +138,8 @@ body {
 ul.header__navbar__submenu {
 	li {
 		display: block;
+		font-size: 1.2rem;
+		font-weight: normal;
 	}
 	li:hover {
 		font-weight: bold;
@@ -147,11 +148,11 @@ ul.header__navbar__submenu {
 
 .header__navbar__link {	
 	font-size: 1.2rem;	
-	color: #ffdead;
+	color: $skin-color;
 	&--selected {
 		font-weight: bold;
 		font-size: 1.1em;
-		color: #00c4f0;
+		color: $light-blue-color;
 	}
 }
 
