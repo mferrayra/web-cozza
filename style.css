@@ -47,7 +47,8 @@ body {
   body h1 {
     margin: 30px 0 20px;
     font-size: 2.5em;
-    font-family: 'Lobster', cursive; }
+    font-family: 'Lobster', cursive;
+    text-align: right; }
   body a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -56,8 +57,7 @@ body {
     list-style: none; }
   body main {
     margin-top: 70px;
-    padding: 15px;
-    height: 1000px; }
+    padding: 15px; }
   body footer {
     background-color: #993300;
     color: #ffdead;
@@ -245,6 +245,12 @@ fieldset {
     animation-duration: 6s;
     animation-iteration-count: infinite; }
 
+/*
+* @Author: mferrayra
+* @Date:   2021-10-28 18:08:56
+* @Last Modified by:   mferrayra
+* @Last Modified time: 2021-11-04 19:24:45
+*/
 h2 {
   margin: 10px 0 10px;
   font-size: 2em;
@@ -259,7 +265,6 @@ section {
   font-style: italic; }
 
 .section__history {
-  margin: 20px;
   font-size: 1.3rem;
   font-style: normal;
   margin-top: 0; }
@@ -275,22 +280,23 @@ section {
     font-style: normal;
     margin-top: 0; } }
 
-body h1 {
-  position: absolute;
-  margin-top: 20px;
-  padding-right: 5%;
-  width: 90%;
-  text-align: right;
-  font-family: 'Lobster', cursive; }
-
-body aside {
-  position: fixed;
-  padding: 0 5px;
-  bottom: 20px;
-  right: 20px;
-  text-align: right;
-  background-color: #993300;
-  border-radius: 10px; }
+body {
+  /*h1 {
+		position:  absolute;
+		margin-top: 20px;
+		padding-right: 5%;
+		width: 90%;
+		text-align: right;  
+		font-family: 'Lobster', cursive;
+	}*/ }
+  body aside {
+    position: fixed;
+    padding: 0 5px;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    background-color: #993300;
+    border-radius: 10px; }
 
 #home-carousel {
   min-height: 300px;
