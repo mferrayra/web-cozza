@@ -4,10 +4,6 @@ h2 {
 	font-family: 'Lobster', cursive;
 }
 
-section {
-	height: 1050px;
-}
-
 .section {
 	&__compromiso {
 		font-size: 1.5rem;
@@ -20,21 +16,4 @@ section {
 		font-style: normal;
 		margin-top: 0;
 	}
-}
-
-@media (max-width: 768px) { 
-	.section {
-		&__compromiso {
-			font-size: 1.2rem;
-			line-height: 1.3rem;
-			font-style: italic;
-		}
-
-		&__history {
-			margin: 20px;
-			font-size: 1rem;
-			font-style: normal;
-			margin-top: 0;
-		}
-	}	 
 }

@@ -1,56 +1,13 @@
-fieldset {
-	display:  flex;		
-	border-style: solid;
-	border-width: 3px;
-	border-radius: 10px;
-	border-color: $brown-color;
-  	color: $brown-color;  	
-  	margin: 50px 20px;
-  	padding: 30px;  	
-  	font-size: 1.2em;  
-  	width: 80%;	
-	
-	input {
-		margin: 20px 0 0 20px;
-		width:  150px;
-		height:  40px;
-		background-color: $skin-color;
-		font-weight: bold;
-	}
-
-	input[Type="text"] {	
-		width:  95%;
-		margin: 5px 0px;
-		background-color:  $white-color;
-		font-weight: 200;
-	}  	
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
 }
-
-.formContact {
-	&__data {
-		display:  flex;
-		flex-direction: column;
-		align-items: left;
-		width: 600px;
-	}
-
-	&__buttons {
-		display:  flex;
-		flex-direction: column;
-		align-items: center;
-
-		&__imgAnswer {
-			margin-top: 20px;
-			margin-left: 10px;
-			height:  150px;
-			border-style: solid;
-			border-radius:  120px;
-			border-width: 6px;		
-		}
-
-		&__message {
-			margin-left:  10px;
-			font-style: italic;	
-		}
-	}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
 }

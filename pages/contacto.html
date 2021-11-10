@@ -24,7 +24,7 @@
 					</div>
 				</div>	
 			</div>
-			<div class="col-6 offset-3 align-self-center">
+			<div class="col-6 col-lg-4 offset-3 offset-lg-5 align-self-center">
 				<nav class="navbar navbar-expand-sm justify-content-end w-100 h-100 p-2">
 					<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
 						<span class="navbar-toggler-icon"></span>
@@ -33,7 +33,8 @@
 						<ul class="navbar-nav justify-content-between w-100 text-end">
 							<li><a class="header__navbar__link" href="../index.html"><i class="fas fa-house-user"></i> Inicio</li></a>
 							<li>
-								<a class="header__navbar__link" href="productos.html"><i class="fa fa-soap d-none d-sm-inline d-sm-none d-md-inline"></i> Productos</a>
+								<a class="header__navbar__link" href="productos.html">Productos</a>
+								<i class="fas fa-caret-down"></i>
 								<ul class="header__navbar__submenu">
 									<li><a href="productos.html#limpieza">Limpieza</a></li>
 									<li><a href="productos.html#bazar">Bazar</a></li>
@@ -43,13 +44,13 @@
 								</ul>
 							</li>
 							<li>
-								<a class="header__navbar__link" href="nosotros.html"><i class="fas fa-user-tie d-none d-sm-inline d-sm-none d-md-inline"></i> Nosotros</a>	
+								<a class="header__navbar__link" href="nosotros.html">Nosotros</a>	
 							</li>
 							<li class="header__navbar__link--selected">
-								<i class="fas fa-align-justify d-none d-sm-inline d-sm-none d-md-inline"></i> Contacto
+								Contacto
 							</li>
 							<li>
-								<a class="header__navbar__link" href="ofertas.html"><i class="fa fa-bullhorn d-none d-sm-inline d-sm-none d-md-inline"></i> Ofertas</a>
+								<a class="header__navbar__link" href="ofertas.html">Ofertas</a>
 							</li>			
 						</ul>
 					</div>	
@@ -58,32 +59,105 @@
 		</div>		
 	</header>
 	<main>
-		<section>
-			<form method="post">
-				<fieldset>
-					<div class="formContact__data">
-						<label for="names">* Nombres</label>
-						<input type="text" name="names" required placeholder="tus nombres" autofocus>
-						<label for="lastName">* Apellido</label>
-						<input type="text" name="lastName" required placeholder="tu apellido">
-						<label for="email">* Email</label>
-						<input type="text" name="email" required placeholder="tu email">
-						<label for="phone">Teléfono</label>
-						<input type="text" name="phoone" required placeholder="tu teléfono">						
+		<!--Section: Contact v.1-->
+		<section class="section pb-5">
+
+			<!--Section heading-->
+			<h2 class="section-heading h1 pt-4">Contact us</h2>
+			<!--Section description-->
+			<p class="section-description pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
+				amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a
+			pariatur accusamus veniam.</p>
+
+			<div class="row">
+
+				<!--Grid column-->
+				<div class="col-lg-5 mb-4">
+
+					<!--Form with header-->
+					<div class="card">
+
+						<div class="card-body">
+							<!--Header-->
+							<div class="form-header blue accent-1">
+								<h3><i class="fas fa-envelope"></i> Write to us:</h3>
+							</div>
+
+							<p>We'll write rarely, but with only the best content.</p>
+							<br>
+
+							<!--Body-->
+							<div class="md-form">
+								<i class="fas fa-user prefix grey-text"></i>
+								<input type="text" id="form-name" class="form-control">
+								<label for="form-name">Your name</label>
+							</div>
+
+							<div class="md-form">
+								<i class="fas fa-envelope prefix grey-text"></i>
+								<input type="text" id="form-email" class="form-control">
+								<label for="form-email">Your email</label>
+							</div>
+
+							<div class="md-form">
+								<i class="fas fa-tag prefix grey-text"></i>
+								<input type="text" id="form-Subject" class="form-control">
+								<label for="form-Subject">Subject</label>
+							</div>
+
+							<div class="md-form">
+								<i class="fas fa-pencil-alt prefix grey-text"></i>
+								<textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+								<label for="form-text">Icon Prefix</label>
+							</div>
+
+							<div class="text-center mt-4">
+								<button class="btn btn-light-blue">Submit</button>
+							</div>
+
+						</div>
+
 					</div>
-					<div class="formContact__data">
-						<label for="comment">* Sugerencia o Comentario</label>	
-						<textarea name="comment" cols="30" rows="17"></textarea>
-					</div>					
-					<div class="formContact__buttons">
-						<input type="reset" name="reset" value="Limpiar">
-						<input type="submit" name="enviar" value="Enviar">
-						<img class="formContact__buttons__imgAnswer" src="../images/ines.png" alt="Foto Inés Cozza">
-						<span class="formContact__buttons__message">Te voy a responder!</span>
-					</div>				
-				</fieldset>
-			</form>
+					<!--Form with header-->
+
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-7">
+
+					<!--Google map-->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51928.41120614652!2d-62.267378942716924!3d-35.56541432780553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aca9f8394f37%3A0x7420255cbb889bc!2sSan%20Lorenzo%203856%2C%20S2002%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1636520903667!5m2!1sen!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+					<br>
+					<!--Buttons-->
+					<div class="row text-center">
+						<div class="col-md-4">
+							<a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
+							<p>San Francisco, CA 94126</p>
+							<p>United States</p>
+						</div>
+
+						<div class="col-md-4">
+							<a class="btn-floating blue accent-1"><i class="fas fa-phone"></i></a>
+							<p>+ 01 234 567 89</p>
+							<p>Mon - Fri, 8:00-22:00</p>
+						</div>
+
+						<div class="col-md-4">
+							<a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
+							<p>info@gmail.com</p>
+							<p>sale@gmail.com</p>
+						</div>
+					</div>
+
+				</div>
+				<!--Grid column-->
+
+			</div>
+
 		</section>
+		<!--Section: Contact v.1-->
 	</main>	
 	<footer class="footer">
 		<div class="container-fluid p-3">
