@@ -1,6 +1,7 @@
 /* font family - fontawesome  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 /*por el stoke del url (backgroung-image => toogle button)*/
 /* reset margin-padding  */
@@ -12,8 +13,9 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   min-height: 100%;
+  color: #000000;
   /* header */ }
   body header {
     background-color: #993300;
@@ -44,8 +46,13 @@ body {
   body h1 {
     margin: 30px 0 20px;
     font-size: 2.5em;
-    font-family: 'Lobster', cursive;
-    text-align: right; }
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; }
+  body h2 {
+    margin: 10px 0 10px;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; }
   body a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -77,13 +84,29 @@ body {
 
 .header__stamp__stampTitle--fontsize {
   font-size: 2.5rem;
+  background: -webkit-linear-gradient(to right, #ffdead, #00c4f0);
+  background: -moz-linear-gradient(to right, #ffdead, #00c4f0);
+  background: -o-linear-gradient(to right, #ffdead, #00c4f0);
+  background: -ms-linear-gradient(to right, #ffdead, #00c4f0);
   background: linear-gradient(to right, #ffdead, #00c4f0);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  -ms-background-clip: text;
   background-clip: text;
   color: transparent; }
 
 .header__stamp__stampSubTitle--fontsize {
   font-size: 1.5rem;
+  background: -webkit-linear-gradient(to right, #ffdead, #00c4f0);
+  background: -moz-linear-gradient(to right, #ffdead, #00c4f0);
+  background: -o-linear-gradient(to right, #ffdead, #00c4f0);
+  background: -ms-linear-gradient(to right, #ffdead, #00c4f0);
   background: linear-gradient(to right, #ffdead, #00c4f0);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  -ms-background-clip: text;
   background-clip: text;
   color: transparent; }
 
@@ -148,19 +171,40 @@ a.header__navbar__link:hover {
   border-style: none;
   font-size: 0.8rem; }
 
-.map-container-6 {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0; }
+.btn-primary {
+  color: #000000;
+  background-color: #00c4f0;
+  border-color: #00a5ca; }
+  .btn-primary:hover {
+    color: #000000;
+    background-color: #0bd2ff;
+    border-color: #24d7ff; }
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #000000;
+    background-color: #0bd2ff;
+    border-color: #24d7ff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 140, 171, 0.5); }
+  .btn-check:checked + .btn-primary,
+  .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #000;
+    background-color: #33d0f3;
+    border-color: #1aaecf; }
+    .btn-check:checked + .btn-primary:focus,
+    .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus,
+    .show > .btn-primary.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.25rem rgba(0, 140, 171, 0.5); }
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #000;
+    background-color: #00c4f0;
+    border-color: #00a5ca; }
 
-.map-container-6 iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute; }
-
+/*
+* @Author: mferrayra
+* @Date:   2021-10-28 18:06:07
+* @Last Modified by:   mferrayra
+* @Last Modified time: 2021-11-10 11:00:21
+*/
 @keyframes priceSkinCard {
   0% {
     color: #ffdead;
@@ -224,38 +268,23 @@ a.header__navbar__link:hover {
 * @Last Modified by:   mferrayra
 * @Last Modified time: 2021-11-04 19:24:45
 */
-h2 {
-  margin: 10px 0 10px;
-  font-size: 2em;
-  font-family: 'Lobster', cursive; }
-
 .section__compromiso {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-style: italic; }
+  font-size: 1.6rem;
+  line-height: 2rem; }
 
 .section__history {
   font-size: 1.3rem;
   font-style: normal;
   margin-top: 0; }
 
-body {
-  /*h1 {
-		position:  absolute;
-		margin-top: 20px;
-		padding-right: 5%;
-		width: 90%;
-		text-align: right;  
-		font-family: 'Lobster', cursive;
-	}*/ }
-  body aside {
-    position: fixed;
-    padding: 0 5px;
-    bottom: 20px;
-    right: 20px;
-    text-align: right;
-    background-color: #993300;
-    border-radius: 10px; }
+body aside {
+  position: fixed;
+  padding: 0 5px;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  background-color: #993300;
+  border-radius: 10px; }
 
 #home-carousel {
   min-height: 300px;

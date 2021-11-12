@@ -1,11 +1,16 @@
 /* font family - fontawesome  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 $white-color: #ffffff;
 $black-color: #000000;
-$brown-color: #993300; 
+$brown-color: #993300;
 $skin-color: #ffdead;
 $skin-color-rgb: rgb(255,222,173); /*por el stoke del url (backgroung-image => toogle button)*/
 $light-blue-color: #00c4f0;
@@ -20,8 +25,9 @@ $light-blue-color: #00c4f0;
 body {
 	display: flex;
 	flex-direction: column;	
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	min-height: 100%;
+	color: $black-color;
 
 	/* header */
 	header {		
@@ -35,28 +41,27 @@ body {
 
 		/* navbar */
 		nav {
-			font-size: 1.2rem;	
-			width: 700px;
-			padding: 0 40px;
+		font-size: 1.2rem;	
+		width: 700px;
+		padding: 0 40px;
 
-			div {
-				ul {					
-					li:hover {
-						ul {
-							display: block;	
-							margin-top: -2px;	
-							background-color: $brown-color;
-							width: 125px;	
-							padding: 15px;	
-							font-size: 0.9em;
-							line-height: 2em;
-							border-top-style: solid;
-							border-top-width: 3px;
-							border-color: $skin-color;
-							li {
-								a {
-									color: $skin-color;
-								}
+		div {
+			ul {					
+				li:hover {
+					ul {
+						display: block;	
+						margin-top: -2px;	
+						background-color: $brown-color;
+						width: 125px;	
+						padding: 15px;	
+						font-size: 0.9em;
+						line-height: 2em;
+						border-top-style: solid;
+						border-top-width: 3px;
+						border-color: $skin-color;
+						li {
+							a {
+							color: $skin-color;
 							}
 						}
 					}
@@ -64,43 +69,51 @@ body {
 			}
 		}
 	}
+}
 
-	h1 {
-		margin: 30px 0 20px;
-		font-size: 2.5em;
-		font-family: 'Lobster', cursive;
-		text-align: right;		
-	}
+h1 {
+	margin: 30px 0 20px;
+	font-size: 2.5em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
 
-	a {
-		text-decoration: none;	
-		font-family: 'Roboto', sans-serif;
+h2 {
+	margin: 10px 0 10px;
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;	
+	font-family: 'Roboto', sans-serif;
+	color: $skin-color;
+}
+
+ul {
+	list-style: none;
+}
+
+main {		
+	padding: 15px;
+	background-image: linear-gradient(to right, $skin-color, $light-blue-color, $skin-color, $light-blue-color);
+	min-height: 80rem;
+}
+
+footer {		
+	background-color: $brown-color;
+	color: $skin-color;		
+	border-top-style: solid;
+	border-color: $black-color;
+	border-width: 3px;	
+	font-size: 1rem;
+	line-height: 1.4rem;
+
+	a:hover {
+		border-bottom-style: solid;
+		border-bottom-width: thin;
 		color: $skin-color;
-	}
-
-	ul {
-		list-style: none;
-	}
-
-	main {		
-		padding: 15px;
-		background-image: linear-gradient(to right, $skin-color, $light-blue-color, $skin-color, $light-blue-color);
-		min-height: 80rem;
-	}
-
-	footer {		
-		background-color: $brown-color;
-		color: $skin-color;		
-		border-top-style: solid;
-		border-color: $black-color;
-		border-width: 3px;	
-		font-size: 1rem;
-		line-height: 1.4rem;
-
-		a:hover {
-			border-bottom-style: solid;
-			border-bottom-width: thin;
-			color: $skin-color;
 		}
 	}
 }
@@ -109,29 +122,45 @@ body {
 .header__stamp {	
 	font-family: 'Lobster', cursive;
 	height: 90px;
-	width: 350px;	
+	width: 350px;
 }
 
 .header__stamp__stampTitle--fontsize {
-	font-size: 2.5rem;
+	font-size: 2.5rem;	
+	background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
+	background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
+	background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
+	background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
 	background: linear-gradient(to right, $skin-color, $light-blue-color);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-o-background-clip: text;
+	-ms-background-clip: text;
 	background-clip: text;
 	color: transparent;
 }
 
 .header__stamp__stampSubTitle--fontsize {
 	font-size: 1.5rem;
+	background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
+	background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
+	background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
+	background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
 	background: linear-gradient(to right, $skin-color, $light-blue-color);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-o-background-clip: text;
+	-ms-background-clip: text;
 	background-clip: text;
 	color: transparent;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$skin-color-rgb}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$skin-color-rgb}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler {
-  border-color: $skin-color;
+	border-color: $skin-color;
 } 
 
 .header__navbar__submenu {
@@ -172,12 +201,14 @@ a.header__navbar__link:hover {
 		font-size: 1.1em;
 		color: #00c4f0;
 	}
+
 	&__title--boldWithBottomBorder{
 		font-weight: bold;	
 		border-bottom-style: solid;
 		border-width: thin;
 		border-color: #ffdead;
 	}
+
 	&__newsletterText {
 		margin: 0;
 		width: 50%;
@@ -188,6 +219,7 @@ a.header__navbar__link:hover {
 		border-style: none;
 		font-size: 0.8rem;
 	}
+
 	&__newsletterButton {
 		margin-left: -3px;	
 		background-color: #ffdead;
@@ -197,4 +229,8 @@ a.header__navbar__link:hover {
 		border-style: none;	
 		font-size: 0.8rem;
 	}
+}
+
+.btn-primary {
+    @include button-variant($light-blue-color, darken($light-blue-color, 7.5%), $black-color, lighten($light-blue-color,5%), lighten($light-blue-color, 10%), $black-color);
 }
