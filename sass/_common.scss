@@ -137,7 +137,10 @@ footer {
 	-o-background-clip: text;
 	-ms-background-clip: text;
 	background-clip: text;
-	color: transparent;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-o-text-fill-color: transparent;
+	-ms-text-fill-color: transparent;
 }
 
 .header__stamp__stampSubTitle--fontsize {
@@ -152,7 +155,10 @@ footer {
 	-o-background-clip: text;
 	-ms-background-clip: text;
 	background-clip: text;
-	color: transparent;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-o-text-fill-color: transparent;
+	-ms-text-fill-color: transparent;
 }
 
 .navbar-toggler-icon {
