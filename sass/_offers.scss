@@ -1,49 +1,26 @@
-@keyframes priceSkinCard {
-  0% { 
-  	color: $skin-color;
-  	background-color: $brown-color;
-  	border-style: solid;
-  }
-  50% { 
-  	color: $brown-color;
-  	background-color: $skin-color;
-  	border-style: dashed;
-  	border-with: thin;
-  }
-  100% { 
-  	color: $light-blue-color;
-  	background-color: $skin-color;
-  	border-style: solid; 
-  }
+span.badge {
+	background-color: $brown-color;
+	color: $skin-color;
+	font-size: 1.5rem;
 }
 
-@keyframes priceLightBlueCard {
-  0% { 
-  	color: $light-blue-color; 
-  	background-color: $brown-color;
-  	border-style: solid;
+.card__heart {
+	animation: .5s jump ease infinite alternate;
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
   }
-  50% { 
-  	color: $brown-color;
-  	background-color: $light-blue-color;
-  	border-style: dashed;
-  	border-with: thin;
-  }
-  100% { 
-  	color: $skin-color; 
-  	background-color: $light-blue-color;
-  	border-style: solid; 
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,.1);
   }
 }
 
 @each $rubro in limpieza, bazar, perfumeria {
 	.#{$rubro}__card {
-		height: 400px;
-
-		&__price {
-			animation-name: if($rubro == limpieza, priceSkinCard, priceLightBlueCard);
-			animation-duration: 6s;
-			animation-iteration-count: infinite;
-		}		
+		height: 400px;		
 	}
 }

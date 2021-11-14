@@ -40,9 +40,7 @@ body {
 
 		/* navbar */
 		nav {
-		font-size: 1.2rem;	
-		width: 700px;
-		padding: 0 40px;
+		font-size: 1.2rem;
 
 		div {
 			ul {					
@@ -95,9 +93,9 @@ ul {
 }
 
 main {		
-	padding: 30px;
-	background-image: linear-gradient(to right, $skin-color, $light-blue-color, $skin-color, $light-blue-color);
-	min-height: 1000px;
+	padding: 0px;
+	background-color: $skin-color;
+	min-height: 800px;
 }
 
 footer {		
