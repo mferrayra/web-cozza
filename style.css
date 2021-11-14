@@ -24,7 +24,7 @@ body {
     border-bottom-style: solid;
     border-width: 3px;
     color: #ffdead;
-    height: 110px;
+    min-height: 110px;
     /* navbar */ }
     body header nav {
       font-size: 1.2rem;
@@ -206,7 +206,7 @@ a.header__navbar__link:hover {
 * @Author: mferrayra
 * @Date:   2021-10-28 18:06:07
 * @Last Modified by:   mferrayra
-* @Last Modified time: 2021-11-10 11:00:21
+* @Last Modified time: 2021-11-13 21:35:44
 */
 @keyframes priceSkinCard {
   0% {
