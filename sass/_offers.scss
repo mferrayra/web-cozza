@@ -38,9 +38,7 @@
 
 @each $rubro in limpieza, bazar, perfumeria {
 	.#{$rubro}__card {
-		background-color: if($rubro == limpieza, $skin-color, $light-blue-color);
-		color: $brown-color;
-		width: 400px;
+		height: 400px;
 
 		&__price {
 			animation-name: if($rubro == limpieza, priceSkinCard, priceLightBlueCard);

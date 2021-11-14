@@ -7,11 +7,10 @@
 	<meta name="description" content="Conocé nuestros valores, nuestra historia, sentite cómodo visitándonos las veces que sea necesario; nos hace feliz que mas personas nos conozcan.">
 	<meta name="keywords" content="historia, valores, nosotros">
 	<link rel="icon" href="../images/logo-cozza.png" type="image/png">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="../style.css">	
 </head>
 <body>
-	<header class="container-fluid">
+	<header class="container-fluid p-2">
 		<div class="row">
 			<div class="col-3">
 				<div class="row header__stamp">
@@ -67,20 +66,28 @@
 						<b>Pasión por lo que hacemos:</b> escuchamos y asesoramos a cada quien para que salga satisfecho de su compra, desde la elección de sus necesidades, hasta la forma y medios de pagos que pueda utilizar.
 					</p>
 				</article>
-				<h2>Nuestra historia</h2>
-				<div class="row">				
-					<img class="col col-12 col-md-3 img-fluid" src="../images/nono.png" alt="Juan Cozza y flía. venido de Italia">				
-					<article class="col col-12 col-md-9 p-0">					
-						<p class="section__history">
-							Todo comienza en <b>1943</b>, cuando nuestro antepasado <b>Juan Cozza</b> llegado desde Italia con su familia desde algún tiempo; se radica en la ciudad de Santa Fé. 
-							Dado sus conocimientos en la fabricación de plumeros, y que por aquella epoca eran escasos en la ciudad, rapidamente se dispone a la fabricación de estos, con el fin de proveer a negocios locales y vendedores ambulantes que llevarian su producto a otras localidades.
+				<article class="row mt-5">
+					<div class="card">
+						<div class="card-body">
+							<h2>Nuestra historia</h2>
+							<ul class="row p-0">
+								<li class="col col-12 col-md-3">
+									<img class="img-fluid" src="../images/nono.png" alt="Juan Cozza y flía. venido de Italia">	
+								</li>
+								<li class="col col-12 col-md-9 p-0 section__history">
+									<p>
+										Todo comienza en <b>1943</b>, cuando nuestro antepasado <b>Juan Cozza</b> llegado desde Italia con su familia desde algún tiempo; se radica en la ciudad de Santa Fé. 
+										Dado sus conocimientos en la fabricación de plumeros, y que por aquella epoca eran escasos en la ciudad, rapidamente se dispone a la fabricación de estos, con el fin de proveer a negocios locales y vendedores ambulantes que llevarian su producto a otras localidades.
 
-							Más tarde su hijo <b>Francisco</b>, continuó con la fabricación y además en <b>1987</b> inicia su primer comercio familiar en el garage de su casa, pasando a vender desde plumeros hasta variados artículos de limpieza de todo tipo y calidad; orientando su atención hacia clientes minoristas.
+										Más tarde su hijo <b>Francisco</b>, continuó con la fabricación y además en <b>1987</b> inicia su primer comercio familiar en el garage de su casa, pasando a vender desde plumeros hasta variados artículos de limpieza de todo tipo y calidad; orientando su atención hacia clientes minoristas.
 
-							Hoy día <b>Casa Cozza</b>, es un comercio que no solo mantiene los valores familiares y de nombre, si no que se adecua a las necesidades de las personas y se renueva acorde a nuestro tiempo.
-						</p>
-					</article>
-				</div>			
+										Hoy día <b>Casa Cozza</b>, es un comercio que no solo mantiene los valores familiares y de nombre, si no que se adecua a las necesidades de las personas y se renueva acorde a nuestro tiempo.
+									</p>				
+								</li>
+							</ul>
+						</div>
+					</div>	
+				</article>		
 			</section>			
 		</div>	
 	</main>	
@@ -102,9 +109,9 @@
 				</div>
 				<div class="col col-6 col-md-3">
 					<h6 class="footer__title--boldWithBottomBorder">Newsletter</h6>
-					<div class="mt-4">
-						<input class="footer__newsletterText" type="text" placeholder="Ingresá tu email">
-						<input class="footer__newsletterButton btn-primary" type="button" value="SUSCRIBITE">
+					<div class="mt-4 d-flex">
+						<input class="form-control footer__newsletterText" type="text" placeholder="Ingresá tu email">
+						<input class="btn btn-primary footer__newsletterButton" type="button" value="SUSCRIBITE">
 					</div>
 				</div>
 				<div class="col col-6 col-md-3">
@@ -119,5 +126,7 @@
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!--para desarrollo local si no tengo internet-->
+	<!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
