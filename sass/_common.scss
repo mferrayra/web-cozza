@@ -1,19 +1,8 @@
-/* font family - fontawesome  */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+/* estilo común para todas las páginas */
 
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-
-$white-color: #ffffff;
-$black-color: #000000;
-$brown-color: #993300;
-$skin-color: #ffdead;
-$skin-color-rgb: rgb(255,222,173); /*por el stoke del url (backgroung-image => toogle button)*/
-$light-blue-color: #00c4f0;
+@import "fonts";
+@import "colors";
+@import "custom-bs";
 
 /* reset margin-padding  */
 * {
@@ -68,6 +57,7 @@ body {
 	}
 }
 
+/* encabezado principal */
 h1 {
 	margin: 30px 0 20px;
 	font-size: 2.5em;
@@ -75,6 +65,8 @@ h1 {
 	font-weight: 700;
 }
 
+
+/* encabezado secundario */
 h2 {
 	margin: 10px 0 10px;
 	font-size: 2em;
@@ -82,22 +74,27 @@ h2 {
 	font-weight: 700;
 }
 
+
+/* links */
 a {
 	text-decoration: none;	
 	font-family: 'Roboto', sans-serif;
 	color: $skin-color;
 }
 
+/* listas desordenadas */
 ul {
 	list-style: none;
 }
 
+/* semantica */
 main {		
 	padding: 0px;
 	background-color: $skin-color;
 	min-height: 800px;
 }
 
+/* footer */
 footer {		
 	background-color: $brown-color;
 	color: $skin-color;		
@@ -115,13 +112,14 @@ footer {
 	}
 }
 
-/* brand */
+/* logo */
 .header__stamp {	
 	font-family: 'Lobster', cursive;
 	height: 90px;
 	width: 350px;
 }
 
+/* titulo logo */
 .header__stamp__stampTitle--fontsize {
 	font-size: 2.5rem;	
 	background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
@@ -140,6 +138,7 @@ footer {
 	-ms-text-fill-color: transparent;
 }
 
+/* subtitulo logo */
 .header__stamp__stampSubTitle--fontsize {
 	font-size: 1.5rem;
 	background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
@@ -158,6 +157,7 @@ footer {
 	-ms-text-fill-color: transparent;
 }
 
+/* menu hamburguesa */
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$skin-color-rgb}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -166,6 +166,7 @@ footer {
 	border-color: $skin-color;
 } 
 
+/* sumbenu */
 .header__navbar__submenu {
 	position: absolute;
 	display: none;
@@ -182,6 +183,7 @@ ul.header__navbar__submenu {
 	}	
 }
 
+/* estilo de menu, y menu seleccionado */
 .header__navbar__link {	
 	font-size: 1.2rem;	
 	color: $skin-color;
@@ -198,6 +200,7 @@ a.header__navbar__link:hover {
 	color: #ffdead;
 }
 
+/* link seleccionado en el footer + estilo de cabeceras en los footer */
 .footer {
 	&__link--selected {
 		font-weight: bold;
@@ -212,6 +215,7 @@ a.header__navbar__link:hover {
 		border-color: #ffdead;
 	}
 
+	/* newsletter: ingreso de email */
 	&__newsletterText {
 		margin: 0;
 		width: 50%;
@@ -219,6 +223,7 @@ a.header__navbar__link:hover {
 		font-size: 0.8rem;
 	}
 
+	/* newsletter: boton para la suscripcion */
 	&__newsletterButton {
 		border-top-left-radius: 0px;
 		border-bottom-left-radius: 0px;
@@ -229,8 +234,4 @@ a.header__navbar__link:hover {
 		font-size: 0.8rem;
 		padding:0px;
 	}
-}
-
-.btn-primary {
-    @include button-variant($light-blue-color, darken($light-blue-color, 7.5%), $black-color, lighten($light-blue-color,5%), lighten($light-blue-color, 10%), $black-color);
 }
