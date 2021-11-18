@@ -85,6 +85,7 @@ a {
 /* listas desordenadas */
 ul {
 	list-style: none;
+	padding: 0px;
 }
 
 /* semantica */
@@ -116,12 +117,11 @@ footer {
 .header__stamp {	
 	font-family: 'Lobster', cursive;
 	height: 90px;
-	width: 350px;
 }
 
 /* titulo logo */
 .header__stamp__stampTitle--fontsize {
-	font-size: 2.5rem;	
+	font-size: 2rem;
 	background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
 	background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
 	background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
@@ -181,6 +181,7 @@ ul.header__navbar__submenu {
 	li:hover {
 		font-weight: bold;
 	}	
+	z-index: 1;
 }
 
 /* estilo de menu, y menu seleccionado */

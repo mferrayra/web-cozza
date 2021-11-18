@@ -21,7 +21,7 @@ span.badge {
   }
 }
 
-@each $rubro in limpieza, bazar, perfumeria {
+@each $rubro in limpieza, bazar, perfumeria, petshop {
 	.#{$rubro}__card {
 		height: 400px;		
 	}
