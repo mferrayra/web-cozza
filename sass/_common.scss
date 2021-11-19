@@ -17,44 +17,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	min-height: 100%;
 	color: $black-color;
-
-	/* header */
-	header {		
-		background-color: $brown-color;
-		border-bottom-color: $black-color;
-		border-bottom-style: solid;
-		border-width: 3px;
-		color: $skin-color;
-		min-height: 110px;
-
-		/* navbar */
-		nav {
-		font-size: 1.2rem;
-
-		div {
-			ul {					
-				li:hover {
-					ul {
-						display: block;	
-						margin-top: -2px;	
-						background-color: $brown-color;
-						width: 125px;	
-						padding: 15px;	
-						font-size: 0.9em;
-						line-height: 2em;
-						border-top-style: solid;
-						border-top-width: 3px;
-						border-color: $skin-color;
-						li {
-							a {
-							color: $skin-color;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
 }
 
 /* encabezado principal */
@@ -109,52 +71,91 @@ footer {
 		border-bottom-style: solid;
 		border-bottom-width: thin;
 		color: $skin-color;
+	}
+}
+
+/* submenu */
+#menu-with-submenu:hover {
+	ul {
+		display: block;	
+		margin-top: -2px;	
+		background-color: $brown-color;
+		width: 125px;	
+		padding: 15px;	
+		font-size: 0.9em;
+		line-height: 2em;
+		border-top-style: solid;
+		border-top-width: 3px;
+		border-color: $skin-color;
+
+		li {
+			a {
+				color: $skin-color;
+			}
 		}
 	}
 }
 
-/* logo */
-.header__stamp {	
-	font-family: 'Lobster', cursive;
-	height: 90px;
-}
+/* header */
+.header {		
+	background-color: $brown-color;
+	border-bottom-color: $black-color;
+	border-bottom-style: solid;
+	border-width: 3px;
+	color: $skin-color;
+	min-height: 110px;
 
-/* titulo logo */
-.header__stamp__stampTitle--fontsize {
-	font-size: 2rem;
-	background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
-	background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
-	background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
-	background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
-	background: linear-gradient(to right, $skin-color, $light-blue-color);
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	-ms-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	-ms-text-fill-color: transparent;
-}
+	&__container {
+		min-width: 350px;
+		&__logo {
+			min-width: 200px;
+			font-family: 'Lobster', cursive;
+			height: 90px;
+			img {
+				height: 80px;
+				width: 90px;
+			}
+			&__title {
+				font-size: 2rem;
+				background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
+				background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
+				background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
+				background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
+				background: linear-gradient(to right, $skin-color, $light-blue-color);
+				-webkit-background-clip: text;
+				-moz-background-clip: text;
+				-o-background-clip: text;
+				-ms-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				-moz-text-fill-color: transparent;
+				-o-text-fill-color: transparent;
+				-ms-text-fill-color: transparent;
+			}
+			&__subtitle {
+				font-size: 1.5rem;
+				background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
+				background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
+				background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
+				background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
+				background: linear-gradient(to right, $skin-color, $light-blue-color);
+				-webkit-background-clip: text;
+				-moz-background-clip: text;
+				-o-background-clip: text;
+				-ms-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color: transparent;
+				-moz-text-fill-color: transparent;
+				-o-text-fill-color: transparent;
+				-ms-text-fill-color: transparent;
+			}
+		}
+	}
 
-/* subtitulo logo */
-.header__stamp__stampSubTitle--fontsize {
-	font-size: 1.5rem;
-	background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
-	background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
-	background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
-	background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
-	background: linear-gradient(to right, $skin-color, $light-blue-color);
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-o-background-clip: text;
-	-ms-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	-o-text-fill-color: transparent;
-	-ms-text-fill-color: transparent;
+	/* navbar */
+	&__navbar-font-size {
+		font-size: 1.2rem;
+	}
 }
 
 /* menu hamburguesa */
@@ -198,22 +199,22 @@ ul.header__navbar__submenu {
 a.header__navbar__link:hover {
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
-	color: #ffdead;
+	color: $skin-color;
 }
 
-/* link seleccionado en el footer + estilo de cabeceras en los footer */
+/* clases footer */
 .footer {
 	&__link--selected {
 		font-weight: bold;
 		font-size: 1.1em;
-		color: #00c4f0;
+		color: $light-blue-color;
 	}
 
 	&__title--boldWithBottomBorder{
 		font-weight: bold;	
 		border-bottom-style: solid;
 		border-width: thin;
-		border-color: #ffdead;
+		border-color: $skin-color;
 	}
 
 	/* newsletter: ingreso de email */
