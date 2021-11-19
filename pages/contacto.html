@@ -68,32 +68,37 @@
 				</article>				
 				<div class="row mt-5">	
 					<!-- formulario de contacto -->				
-					<form class="col col-12 col-md-4 card" method="post">
+					<form class="col col-12 col-md-4 card needs-validation" novalidate>
 						<div class="card-body">
 							<h3><i class="fas fa-envelope"></i> Escribinos</h3>
 							<p>Te responderemos a la brevedad.</p>
 							<div class="mb-3">
 								<i class="fas fa-user"></i>
 								<label for="form-name">Tu nombre</label>
-								<input type="text" class="form-control" autofocus>									
+								<input type="text" class="form-control" maxlength="50" required autofocus>
+								<span class="invalid-feedback">* ingresá tu nombre</span>
 							</div>
 							<div class="mb-3">
 								<i class="fas fa-envelope"></i>
 								<label for="form-email">Tu email</label>
-								<input type="text" class="form-control">									
+								<input type="email" class="form-control" maxlength="50" required>
+								<span class="invalid-feedback">* ingresá tu email correctamente</span>
 							</div>
 							<div class="mb-3">
 								<i class="fas fa-tag"></i>
 								<label for="form-Subject">Asunto</label>
-								<input type="text" class="form-control">									
+								<input type="text" class="form-control" maxlength="20" required>
+								<span class="invalid-feedback">* ingresá porque el asunto</span>
 							</div>
 							<div class="mb-3">
 								<i class="fas fa-pencil-alt"></i>
 								<label for="form-text">Consulta o sugerencias</label>
-								<textarea class="form-control md-textarea" rows="3"></textarea>
+								<textarea class="form-control md-textarea" rows="3" maxlength="60" required></textarea>
+								<span class="invalid-feedback">* ingresá la consulta o sugerencia/s</span>
 							</div>
-							<div class=" d-grid mt-4">
-								<input type="submit" class="btn btn-primary" name="btn-send" value="Enviar">
+							<div class="row mt-4 mb-4 p-2">
+								<input type="submit" class="col col-5 btn btn-primary" name="btn-send" value="Enviar">
+								<input type="reset" id="btn-cancel" class="col col-5 offset-2 btn btn-default" name="btn-cancel" value="Cancelar">
 							</div>
 						</div>
 					</form>
@@ -104,7 +109,7 @@
 						</div>
 						<iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.5110026646603!2d-60.677539384297624!3d-32.93751557875708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7aca9f8394f37%3A0x9bc39e9035bad050!2sSan%20Lorenzo%203861%2C%20S2002%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1636544752950!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
-				</div>
+				</div>				
 			</section>
 		</div>		
 	</main>
@@ -144,6 +149,35 @@
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script>
+		(function () {
+			'use strict';
+			
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+		  	var forms = document.querySelectorAll('.needs-validation')
+
+			document.getElementById("btn-cancel").addEventListener("click", function() {
+				for (var i = 0; i < forms.length; i++) {
+					forms[i].classList.remove('was-validated')
+				}
+			})
+
+		  	// Loop over them and prevent submission
+		  	Array.prototype.slice.call(forms)
+		  		.forEach(function (form) {
+		  		form.addEventListener('submit', function (event) {		  			
+		  			if (!form.checkValidity()) {
+		  				event.preventDefault()
+		  				event.stopPropagation()
+		  				form.classList.add('was-validated')
+		  			} else {
+		  				form.classList.remove('was-validated')
+		  			}
+		  		
+		  	}, false)
+		  })
+		})()
+	</script>
 	<!--para desarrollo local si no tengo internet-->
 	<!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>

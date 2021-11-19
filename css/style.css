@@ -11,7 +11,7 @@
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 /* paleta de colores del sitio */
 /*por el stoke del url (backgroung-image => toogle button)*/
-/* personalizo la clase btn-primary de bootstrap para que el color sea coherente con mi paleta */
+/* personalizo la clase btn-primary y btn-default de bootstrap para que el color sea coherente con mi paleta */
 .btn-primary {
   color: #000000;
   background-color: #00c4f0;
@@ -39,6 +39,34 @@
     color: #000;
     background-color: #00c4f0;
     border-color: #00a5ca; }
+
+.btn-default {
+  color: #000000;
+  background-color: #ffdead;
+  border-color: #ffcf87; }
+  .btn-default:hover {
+    color: #000000;
+    background-color: #ffe8c7;
+    border-color: #fff3e0; }
+  .btn-check:focus + .btn-default, .btn-default:focus {
+    color: #000000;
+    background-color: #ffe8c7;
+    border-color: #fff3e0;
+    box-shadow: 0 0 0 0.25rem rgba(217, 176, 115, 0.5); }
+  .btn-check:checked + .btn-default,
+  .btn-check:active + .btn-default, .btn-default:active, .btn-default.active,
+  .show > .btn-default.dropdown-toggle {
+    color: #000;
+    background-color: #ffe5bd;
+    border-color: #ffd393; }
+    .btn-check:checked + .btn-default:focus,
+    .btn-check:active + .btn-default:focus, .btn-default:active:focus, .btn-default.active:focus,
+    .show > .btn-default.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.25rem rgba(217, 176, 115, 0.5); }
+  .btn-default:disabled, .btn-default.disabled {
+    color: #000;
+    background-color: #ffdead;
+    border-color: #ffcf87; }
 
 /* reset margin-padding  */
 * {
@@ -235,6 +263,10 @@ span.badge {
   background-color: #993300;
   color: #ffdead;
   font-size: 1.5rem; }
+
+.card {
+  box-shadow: 0px 0px 10px 10px #993300 inset;
+  border-radius: 10px; }
 
 .card__heart {
   animation: .5s jump ease infinite alternate; }

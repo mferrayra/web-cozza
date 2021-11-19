@@ -1,4 +1,4 @@
-/* personalizo la clase btn-primary de bootstrap para que el color sea coherente con mi paleta */
+/* personalizo la clase btn-primary y btn-default de bootstrap para que el color sea coherente con mi paleta */
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -6,4 +6,8 @@
 
 .btn-primary {
     @include button-variant($light-blue-color, darken($light-blue-color, 7.5%), $black-color, lighten($light-blue-color,5%), lighten($light-blue-color, 10%), $black-color);
+}
+
+.btn-default {
+    @include button-variant($skin-color, darken($skin-color, 7.5%), $black-color, lighten($skin-color,5%), lighten($skin-color, 10%), $black-color);
 }
