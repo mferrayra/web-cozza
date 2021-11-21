@@ -47,7 +47,7 @@ ul {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
-	
+
 	li {
 		margin: 0px;
 		padding: 0px;
@@ -107,18 +107,16 @@ footer {
 	border-width: 10px;
 	background-color: $brown-color;
 	color: $skin-color;
-	min-height: 110px;
+	min-height: 130px;
 
 	&__container {
-		min-width: 350px;
-
+		min-width: 400px;
 		&__logo {
 			min-width: 200px;
-			font-family: 'Lobster', cursive;
-			height: 90px;
+			font-family: 'Lobster', cursive;			
 			img {
-				height: 80px;
-				width: 90px;
+				height: 100px;
+				width: 105px;
 			}
 			&__title {
 				font-size: 2rem;

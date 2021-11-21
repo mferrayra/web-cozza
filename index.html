@@ -17,8 +17,8 @@
 			<li class="col-7 d-flex header__container__logo">
 				<img src="images/logo-cozza.png" alt="Logo de Casa Cozza">
 				<ul class="p-2 pt-0">					
-					<li class="h-25"><span class="header__container__logo__title">Casa Cozza</span></li>
-					<li class="h-75 pt-3"><span class="header__container__logo__subtitle">Polirubros</span></li>
+					<li class="h-25"><span class="header__container__logo__title">Casa Cozza</span></li>	
+					<li class="h-25 pt-2"><span class="header__container__logo__subtitle">Polirubros</span></li>
 				</ul>
 			</li>
 			<li class="col-5 align-self-center">
@@ -28,8 +28,8 @@
 					</button>					
 					<div class="collapse navbar-collapse" id="navbarcollapse">
 						<ul class="navbar-nav justify-content-between w-100 text-end">
-							<li class="header__navbar__link--selected"><i class="fas fa-house-user"></i> Inicio</li>
-							<li id="menu-with-submenu">
+							<li class="header__navbar__link--selected ms-3"><i class="fas fa-house-user"></i> Inicio</li>
+							<li id="menu-with-submenu" class="ms-3">
 								<a class="header__navbar__link" href="pages/productos.html">Productos</a>
 								<i class="fas fa-caret-down"></i>
 								<ul class="header__navbar__submenu">
@@ -39,13 +39,13 @@
 									<li><a href="pages/productos.html#otros">Otros</a></li>
 								</ul>
 							</li>
-							<li>
+							<li class="ms-3">
 								<a class="header__navbar__link" href="pages/nosotros.html">Nosotros</a>	
 							</li>
-							<li>
+							<li class="ms-3">
 								<a class="header__navbar__link" href="pages/contacto.html">Contacto</a>	
 							</li>
-							<li>
+							<li class="ms-3">
 								<a class="header__navbar__link" href="pages/ofertas.html">Ofertas</a>
 							</li>			
 						</ul>
@@ -56,8 +56,7 @@
 	</header>
 	<!-- main -->
 	<main>		
-		<section class="container-fluid">
-			<h1 class="mb-0 mt-3"><span class="badge w-100">ARTICULOS PARA CADA NECESIDAD</span></h1>
+		<section class="container-fluid p-0">			
 			<!-- carousel -->
 			<ul id="home-carousel" class="carousel slide" data-bs-ride="carousel">
 				<ul class="carousel-indicators">
@@ -79,12 +78,12 @@
 				        	<p class="mb-0">Artículos de limpieza para hogares</p>
 				      	</li>
 						<li>
-							<img src="images/carousel/slide-1-desktop.png" class="d-none d-md-block w-100 img-fluid" alt="Anuncio Limpieza para el Hogar">								
+							<img src="images/carousel/slide-1-desktop.png" class="d-none d-md-block img-fluid" alt="Anuncio Limpieza para el Hogar">								
 						</li>						
 						<!-- mobile -->
 						<li>
-							<img src="images/carousel/slide-1-mobile.png" class="d-md-none d-block h-100 img-fluid" alt="Anuncio Limpieza para el Hogar">	
-						</li>						
+							<img src="images/carousel/slide-1-mobile.png" class="d-md-none d-block img-fluid" alt="Anuncio Limpieza para el Hogar">	
+						</li>
 					</ul>
 					<ul class="carousel-item">
 						<!-- desktop -->
@@ -93,11 +92,11 @@
 				        	<p class="mb-0">Artículos de limpieza para oficinas</p>
 				      	</li>
 						<li>
-							<img src="images/carousel/slide-2-desktop.png" class="d-none d-md-block w-100 img-fluid" alt="Anuncio Limpieza para oficinas">	
+							<img src="images/carousel/slide-2-desktop.png" class="d-none d-md-block img-fluid" alt="Anuncio Limpieza para oficinas">	
 						</li>						
 						<!-- mobile -->
 						<li>
-							<img src="images/carousel/slide-2-mobile.png" class="d-md-none d-block h-100 img-fluid" alt="Anuncio Limpieza para oficinas">	
+							<img src="images/carousel/slide-2-mobile.png" class="d-md-none d-block img-fluid" alt="Anuncio Limpieza para oficinas">	
 						</li>						
 					</ul>
 					<ul class="carousel-item">
@@ -107,11 +106,11 @@
 				        	<p class="mb-0">Artículos de limpieza para hoteles</p>
 				      	</li>
 						<li>
-							<img src="images/carousel/slide-3-dektop.png" class="d-none d-md-block w-100 img-fluid" alt="Anuncio Limpieza para hoteles">	
+							<img src="images/carousel/slide-3-dektop.png" class="d-none d-md-block img-fluid" alt="Anuncio Limpieza para hoteles">	
 						</li>						
 						<!-- mobile -->
 						<li>
-							<img src="images/carousel/slide-3-mobile.png" class="d-md-none d-block h-100 img-fluid" alt="Anuncio Limpieza para hoteles">
+							<img src="images/carousel/slide-3-mobile.png" class="d-md-none d-block img-fluid" alt="Anuncio Limpieza para hoteles">
 						</li>						
 					</ul>
 				</li>
@@ -128,41 +127,44 @@
 						<span class="carousel-control-next-icon p-4" aria-hidden="true"></span>
 						<span class="visually-hidden">Siguiente</span>
 					</button>	
-				</li>				
+				</li>
 			</ul>			
 		</section>
-		<section class="container-fluid mt-5">
-			<h2><span class="badge w-100">NUESTROS ARTICULOS</span></h2>
+		<section class="container-fluid p-0">
+			<span class="badge w-100">
+				<h1>NUESTROS ARTICULOS</h1>
+			</span>
+			
 			<ul class="d-flex justify-content-between flex-wrap mt-4 ms-1 me-1">
-				<li class="pt-4 pr-4 pb-4">
+				<li class="p-4 ms-5 me-5">
 					<a href="pages/productos.html#limpieza">
 						<img class="rounded-pill shadow-background-image" src="images/limpieza.png" alt="Símbolo artículos de limpieza.">
 						<h2 class="mt-3"><span class="badge w-100">Limpieza</span></h2>
 					</a>
 				</li>				
-				<li class="p-4">
+				<li class="p-4 ms-5 me-5">
 					<a href="pages/productos.html#perfumeria">
 						<img class="rounded-pill shadow-background-image" src="images/perfumeria.png" alt="Símbolo artículos de perfumería.">
 						<h2 class="mt-3"><span class="badge w-100">Perfumería</span></h2>
 					</a>
 				</li>
-				<li class="p-4">
+				<li class="p-4 ms-5 me-5">
 					<a href="pages/productos.html#petshop">
-						<img class="rounded-pill shadow-background-image" src="images/pertshop.png" alt="Símbolo artículos de petshop.">
+						<img class="rounded-pill shadow-background-image" src="images/mascotas.png" alt="Símbolo artículos de petshop.">
 						<h2 class="mt-3"><span class="badge w-100">Macotas</span></h2>
 					</a>
 				</li>
-				<li class="p-4">
+				<li class="p-4 ms-5 me-5">
 					<a href="pages/productos.html#varios">
-						<img class="rounded-pill shadow-background-image" src="images/varios.png" alt="Símbolo otros artículos.">
+						<img class="rounded-pill shadow-background-image" src="images/otros.png" alt="Símbolo otros artículos.">
 						<h2 class="mt-3"><span class="badge w-100">Otros</span></h2>
 					</a>
 				</li>				
 			</ul>
 		</section>
-		<section class="container-fluid mt-5">
-			<h2><span class="badge w-100">CONSULTAS FRECUENTES</span></h2>			
-			<ul class="row">
+		<section class="container-fluid p-0">
+			<span class="badge w-100 m-0"><h2>CONSULTAS FRECUENTES</h2></span>			
+			<ul class="row m-0 mt-4">
 				<li class="col col-12">
 					<ul class="accordion p-4" id="faq">
 						<li class="accordion-item">

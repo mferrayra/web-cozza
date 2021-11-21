@@ -159,17 +159,16 @@ footer {
   border-width: 10px;
   background-color: #993300;
   color: #ffdead;
-  min-height: 110px;
+  min-height: 130px;
   /* navbar */ }
   .header__container {
-    min-width: 350px; }
+    min-width: 400px; }
     .header__container__logo {
       min-width: 200px;
-      font-family: 'Lobster', cursive;
-      height: 90px; }
+      font-family: 'Lobster', cursive; }
       .header__container__logo img {
-        height: 80px;
-        width: 90px; }
+        height: 100px;
+        width: 105px; }
       .header__container__logo__title {
         font-size: 2rem;
         background: -webkit-linear-gradient(to right, #ffdead, #00c4f0);
@@ -310,7 +309,19 @@ span.badge {
 .petshop__card {
   height: 400px; }
 
-/* aca iría el scss para los productos */
+.main__h1 {
+  color: #993300;
+  background-color: #ffdead; }
+
+.shadow-background-image-title--small {
+  height: 76px;
+  background-color: #00c4f0;
+  box-shadow: 0px 0px 10px 10px #ffdead;
+  -webkit-box-shadow: 0px 0px 10px 10px #ffdead;
+  -moz-box-shadow: 0px 0px 10px 10px #ffdead;
+  -o-box-shadow: 0px 0px 10px 10px #ffdead;
+  -ms-box-shadow: 0px 0px 10px 10px #ffdead; }
+
 /* nosotros */
 .section__compromiso {
   font-size: 1.6rem;
@@ -339,6 +350,10 @@ body aside {
 li.carousel-caption {
   background-color: #993300;
   opacity: 0.5; }
+
+.carousel-item .img-fluid {
+  width: 100%;
+  height: 100%; }
 
 span.carousel-control-prev-icon:hover {
   background-color: #993300;

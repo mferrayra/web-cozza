@@ -19,9 +19,18 @@ body {
 	}	
 }
 
+h1 {
+	
+}
+
 li.carousel-caption {
 	background-color: $brown-color;
 	opacity: 0.5;
+}
+
+.carousel-item .img-fluid {
+	width: 100%;
+	height: 100%;
 }
 
 span.carousel-control-prev-icon:hover {

@@ -1,1 +1,16 @@
-/* aca iría el scss para los productos */
+.main {
+	&__h1 {
+		color: $brown-color;
+		background-color: $skin-color;
+	}	
+}
+
+.shadow-background-image-title--small {
+	height: 76px;
+    background-color: $light-blue-color;
+    box-shadow: 0px 0px 10px 10px $skin-color;
+    -webkit-box-shadow: 0px 0px 10px 10px $skin-color;
+	-moz-box-shadow: 0px 0px 10px 10px $skin-color;
+	-o-box-shadow: 0px 0px 10px 10px $skin-color;
+	-ms-box-shadow: 0px 0px 10px 10px $skin-color;
+}
