@@ -17,7 +17,7 @@
 			<li class="col-7 d-flex header__container__logo">
 				<img src="images/logo-cozza.png" alt="Logo de Casa Cozza">
 				<ul class="p-2 pt-0">					
-					<li class="h-25"><span class="header__container__logo__title">Cozza</span></li>
+					<li class="h-25"><span class="header__container__logo__title">Casa Cozza</span></li>
 					<li class="h-75 pt-3"><span class="header__container__logo__subtitle">Polirubros</span></li>
 				</ul>
 			</li>
@@ -34,10 +34,9 @@
 								<i class="fas fa-caret-down"></i>
 								<ul class="header__navbar__submenu">
 									<li><a href="pages/productos.html#limpieza">Limpieza</a></li>
-									<li><a href="pages/productos.html#bazar">Bazar</a></li>
 									<li><a href="pages/productos.html#perfumeria">Perfumería</a></li>
 									<li><a href="pages/productos.html#petshop">Pet Shop</a></li>
-									<li><a href="pages/productos.html#varios">Varios</a></li>
+									<li><a href="pages/productos.html#otros">Otros</a></li>
 								</ul>
 							</li>
 							<li>
@@ -56,42 +55,210 @@
 		</ul>		
 	</header>
 	<!-- main -->
-	<main class="border border-primary">
-		<!-- <h1 class="text-end">Gracias por visitarnos!</h1> -->
-		<section>
+	<main>		
+		<section class="container-fluid">
+			<h1 class="mb-0 mt-3"><span class="badge w-100">ARTICULOS PARA CADA NECESIDAD</span></h1>
 			<!-- carousel -->
-			<div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
+			<ul id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+				<ul class="carousel-indicators">
+					<li>
+						<button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Anuncio Limpieza para el Hogar"></button>	
+					</li>
+					<li>
+						<button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Anuncio Limpieza para oficinas"></button>	
+					</li>
+					<li>
+						<button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Anuncio Limpieza para hoteles"></button>
+					</li>					
+				</ul>
+				<li class="carousel-inner">
+					<ul class="carousel-item active">
 						<!-- desktop -->
-						<img src="images/carousel/welcome-dektop.png" class="d-none d-md-block w-100 img-fluid" alt="Portada de bienvenida al sitio.">
+						<li class="carousel-caption d-none d-md-block">
+							<h5 class="mb-0">HOGAR</h5>
+				        	<p class="mb-0">Artículos de limpieza para hogares</p>
+				      	</li>
+						<li>
+							<img src="images/carousel/slide-1-desktop.png" class="d-none d-md-block w-100 img-fluid" alt="Anuncio Limpieza para el Hogar">								
+						</li>						
 						<!-- mobile -->
-						<img src="images/carousel/welcome-mobile.png" class="d-md-none d-block w-100 img-fluid" alt="Portada de bienvenida al sitio.">
-					</div>
-					<div class="carousel-item">
+						<li>
+							<img src="images/carousel/slide-1-mobile.png" class="d-md-none d-block h-100 img-fluid" alt="Anuncio Limpieza para el Hogar">	
+						</li>						
+					</ul>
+					<ul class="carousel-item">
 						<!-- desktop -->
-						<img src="images/carousel/home-desktop.png" class="d-none d-md-block w-100 img-fluid" alt="Anuncio Artículos de Limpieza para el Hogar">
+						<li class="carousel-caption d-none d-md-block">
+				        	<h5 class="mb-0">OFICINA</h5>
+				        	<p class="mb-0">Artículos de limpieza para oficinas</p>
+				      	</li>
+						<li>
+							<img src="images/carousel/slide-2-desktop.png" class="d-none d-md-block w-100 img-fluid" alt="Anuncio Limpieza para oficinas">	
+						</li>						
 						<!-- mobile -->
-						<img src="images/carousel/home-mobile.png" class="d-md-none d-block w-100 img-fluid" alt="Anuncio Artículos de Limpieza para el Hogar">
-					</div>
-					<div class="carousel-item">
+						<li>
+							<img src="images/carousel/slide-2-mobile.png" class="d-md-none d-block h-100 img-fluid" alt="Anuncio Limpieza para oficinas">	
+						</li>						
+					</ul>
+					<ul class="carousel-item">
 						<!-- desktop -->
-						<img src="images/carousel/office-desktop.png" class="d-none d-md-block w-100 img-fluid" alt="Anuncio Artículos de Limpieza para oficinas">
+						<li class="carousel-caption d-none d-md-block">
+				        	<h5 class="mb-0">HOTEL</h5>
+				        	<p class="mb-0">Artículos de limpieza para hoteles</p>
+				      	</li>
+						<li>
+							<img src="images/carousel/slide-3-dektop.png" class="d-none d-md-block w-100 img-fluid" alt="Anuncio Limpieza para hoteles">	
+						</li>						
 						<!-- mobile -->
-						<img src="images/carousel/office-mobile.png" class="d-md-none d-block w-100 img-fluid" alt="Anuncio Artículos de Limpieza para oficinas">
-					</div>
-				</div>
+						<li>
+							<img src="images/carousel/slide-3-mobile.png" class="d-md-none d-block h-100 img-fluid" alt="Anuncio Limpieza para hoteles">
+						</li>						
+					</ul>
+				</li>
 				<!-- slide previa -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Anterior</span>
-				</button>
+				<li>
+					<button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon p-4" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>	
+				</li>				
 				<!-- slide siguiente -->
-				<button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Siguiente</span>
-				</button>
-			</div>
+				<li>
+					<button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon p-4" aria-hidden="true"></span>
+						<span class="visually-hidden">Siguiente</span>
+					</button>	
+				</li>				
+			</ul>			
+		</section>
+		<section class="container-fluid mt-5">
+			<h2><span class="badge w-100">NUESTROS ARTICULOS</span></h2>
+			<ul class="d-flex justify-content-between flex-wrap mt-4 ms-1 me-1">
+				<li class="pt-4 pr-4 pb-4">
+					<a href="pages/productos.html#limpieza">
+						<img class="rounded-pill shadow-background-image" src="images/limpieza.png" alt="Símbolo artículos de limpieza.">
+						<h2 class="mt-3"><span class="badge w-100">Limpieza</span></h2>
+					</a>
+				</li>				
+				<li class="p-4">
+					<a href="pages/productos.html#perfumeria">
+						<img class="rounded-pill shadow-background-image" src="images/perfumeria.png" alt="Símbolo artículos de perfumería.">
+						<h2 class="mt-3"><span class="badge w-100">Perfumería</span></h2>
+					</a>
+				</li>
+				<li class="p-4">
+					<a href="pages/productos.html#petshop">
+						<img class="rounded-pill shadow-background-image" src="images/pertshop.png" alt="Símbolo artículos de petshop.">
+						<h2 class="mt-3"><span class="badge w-100">Macotas</span></h2>
+					</a>
+				</li>
+				<li class="p-4">
+					<a href="pages/productos.html#varios">
+						<img class="rounded-pill shadow-background-image" src="images/varios.png" alt="Símbolo otros artículos.">
+						<h2 class="mt-3"><span class="badge w-100">Otros</span></h2>
+					</a>
+				</li>				
+			</ul>
+		</section>
+		<section class="container-fluid mt-5">
+			<h2><span class="badge w-100">CONSULTAS FRECUENTES</span></h2>			
+			<ul class="row">
+				<li class="col col-12">
+					<ul class="accordion p-4" id="faq">
+						<li class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+									¿Que medios de pagos trabajan?
+								</button>
+							</h2>
+							<ul id="q1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faq">
+								<li class="accordion-body">
+									<article>
+										<p>
+											<strong>Nuestros medios de cobro:</strong>
+										</p>
+										<p>
+											<strong>Contado efectivo:</strong> con este medio de pago accederás a los más <i><u>importantes descuentos</u></i>.	
+										</p>
+										<p>
+											<strong>Tarjetas:</strong> recibimos todas las tarjetas, tanto de débito como de crédito de todas las entidades.	
+										</p>
+										<p>
+											<i><u>No aceptamos cheques por el momento.</u></i>
+										</p>	
+									</article>																		
+								</li>
+							</ul>
+						</li>
+						<li class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+									¿Puedo pagar con billetera Santa Fé?
+								</button>
+							</h2>
+							<ul id="q2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								<li class="accordion-body">
+									<article>
+										<p>
+											<strong>Desde luego que sí!</strong> 
+										</p>
+										<p>
+											Este medio de pago que tanto nos beneficia, mientras este vigente, lo mantendremos disponible.
+										</p>
+									</article>									
+								</li>
+							</ul>
+						</li>
+						<li class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+									¿Hacen envíos a domicilio?
+								</button>
+							</h2>
+							<ul id="q3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								<li class="accordion-body">
+									<article>
+										<p>
+											<strong>Sí, te enviamos tu pedido!</strong>
+										</p>
+										<p>
+											Recuerda que nos encontramos en Rosario, y por esto nuestros envíos solo se realizan en la ciudad.
+										</p>
+										<p>
+											También debés saber que los envíos los hacemos despues de las 17hs.
+										</p>
+										<p>
+											<strong>Importante</strong> a tener en cuenta: toda compra que supere los  <i><u>2000 pesos</u></i> tiene bonificado el envío.
+										</p>
+										<p>
+											Vecinos a nuestro <i><u>local barrio Agote</u></i> no abonarán el envío por cercanía.
+										</p>
+									</article>									 
+								</li>
+							</ul>
+						</li>
+						<li class="accordion-item">
+							<article>
+								<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+										¿Si soy un consorcio puedo abrir una cuenta corriente?
+									</button>
+								</h2>
+								<ul id="q4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+									<li class="accordion-body">
+										<p>
+											<strong>Sí, vas a necesitar acreditar que pertenecés a un consorcio.</strong>
+										</p>
+										<p>
+											<i><u>Acercáte a nuestro local para averiguar más.</u></i>
+										</p>
+									</li>
+								</ul>
+							</article>							
+						</li>
+					</ul>
+				</li>				
+			</ul>
 		</section>
 	</main>
 	<!-- aside -->
@@ -124,7 +291,9 @@
 				</div>
 				<div class="col col-12 col-md-3">
 					<h6 class="footer__title--boldWithBottomBorder">Seguinos</h6>
-					<span><i class="fab fa-facebook"></i> Facebook</span>
+					<a href="https://www.facebook.com/Casa-Cozza-100439702474971" target="_blank">
+						<span><i class="fab fa-facebook"></i> Facebook</span>
+					</a>
 					<span class="d-block"><i class="fab fa-instagram"></i> Instagram</span>	
 				</div>				
 			</div>

@@ -4,6 +4,19 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+$accordion-bg: $white-color;
+$accordion-button-color: $brown-color;
+
+.accordion-button {
+    background-color: $skin-color;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $brown-color;
+    background-color: $skin-color;
+    font-weight: bold;
+}
+
 .btn-primary {
     @include button-variant($light-blue-color, darken($light-blue-color, 7.5%), $black-color, lighten($light-blue-color,5%), lighten($light-blue-color, 10%), $black-color);
 }
