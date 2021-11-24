@@ -72,7 +72,8 @@ ul.accordion {
 		color: $brown-color;
 	}
 
-	&__color:hover {
+	&__color:hover {		
+		color: $brown-color;
 		opacity: 0.5;
 	}
 
