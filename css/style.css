@@ -467,14 +467,14 @@ ul.accordion {
 /* media queries */
 @media only screen and (max-width: 990px) {
   .container-mobile__img {
-    height: 70px;
-    width: 70px; }
+    height: 80px;
+    width: 80px; }
   .container-mobile__label-hidden {
     display: none; } }
 
 @media only screen and (max-width: 576px) {
   .container-mobile__img {
-    height: 70px;
-    width: 70px; }
+    height: 60px;
+    width: 60px; }
   .container-mobile__label-hidden {
     display: none; } }
