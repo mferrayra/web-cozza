@@ -103,3 +103,16 @@ ul.accordion {
 		}
 	}
 }
+
+@media only screen and (max-width: 420px) {
+	.container-mobile {
+		&__img {
+			height: 40px;
+			width: 40px;
+		}
+
+		&__label-hidden {
+			display: none;
+		}
+	}	
+}
