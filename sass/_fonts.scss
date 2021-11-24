@@ -94,6 +94,14 @@
 	.font-menu-size {
 		font-size: 1.1rem;
 	}
+
+	.heading {
+		&__large {
+			font-size: 1.1rem;
+			font-weight: 700;
+			letter-spacing: 0.35rem;		
+		}
+	}
 }
 
 @media only screen and (max-width: 576px) {
