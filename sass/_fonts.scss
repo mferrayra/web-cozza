@@ -4,3 +4,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+.heading {
+	&__extra-large {
+		font-size: 2.5rem;
+		font-weight: 900;
+		letter-spacing: 0.8rem;
+		text-shadow: 1px 1px 2px $skin-color, 0 0 1em $light-blue-color, 0 0 0.2em $brown-color;
+		background-color: $skin-color;
+		margin: 0px;
+		padding: 20px;
+		text-align: center;
+	}
+
+	&__large {
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: 1rem;		
+	}
+
+	&__medium {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	&__small {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+}
+
+.text {
+	&__medium {
+		font-size: 1.5rem;
+	}
+
+	&__small {
+		font-size: 1rem;
+	}
+
+	&__extra-small {
+		font-size: 0.9rem;	
+	}
+
+	&__logo {
+		font-family: 'Lobster', cursive;	
+		&__title {
+			font-size: 2.5rem;
+			background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
+			background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
+			background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
+			background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
+			background: linear-gradient(to right, $skin-color, $light-blue-color);
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			-o-background-clip: text;
+			-ms-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+			-o-text-fill-color: transparent;
+			-ms-text-fill-color: transparent;
+		}
+		&__subtitle {
+			font-size: 2rem;
+			background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
+			background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
+			background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
+			background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
+			background: linear-gradient(to right, $skin-color, $light-blue-color);
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			-o-background-clip: text;
+			-ms-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+			-o-text-fill-color: transparent;
+			-ms-text-fill-color: transparent;
+		}
+	}
+}
+
+/* media queries */
+@media only screen and (max-width: 576px) {
+	.heading {
+		&__extra-large {
+			font-size: 1.6rem;
+			font-weight: 700;
+			letter-spacing: 0.4rem;
+			text-shadow: 1px 1px 2px $skin-color, 0 0 1em $light-blue-color, 0 0 0.2em $brown-color;
+			background-color: $skin-color;
+			margin: 0px;
+			padding: 20px;
+			text-align: center;
+		}
+
+		&__large {
+			font-size: 1.1rem;
+			font-weight: 700;
+			letter-spacing: 0.35rem;		
+		}
+
+		&__medium {
+			font-size: 0.9rem;
+			font-weight: 700;
+		}
+
+		&__small {
+			font-size: 0.7rem;
+			font-weight: 700;
+		}
+	}
+
+	.text {
+		&__medium {
+			font-size: 1.1rem;
+		}
+
+		&__small {
+			font-size: 0.9rem;
+		}
+
+		&__extra-small {
+			font-size: 0.8rem;	
+		}
+
+		&__logo {
+			font-family: 'Lobster', cursive;	
+			&__title {
+				font-size: 1.6rem;			
+			}
+			&__subtitle {
+				font-size: 1.2rem;			
+			}
+		}
+	}
+}

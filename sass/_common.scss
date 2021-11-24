@@ -1,9 +1,5 @@
 /* estilo común para todas las páginas */
 
-@import "fonts";
-@import "colors";
-@import "custom-bs";
-
 /* reset margin-padding  */
 * {
 	margin: 0;
@@ -18,22 +14,6 @@ body {
 	min-height: 100%;
 	color: $black-color;
 }
-
-/* encabezado principal */
-h1 {	
-	font-size: 2.5em;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-}
-
-
-/* encabezado secundario */
-h2 {	
-	font-size: 2em;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-}
-
 
 /* links */
 a {
@@ -112,52 +92,12 @@ footer {
 	&__container {
 		min-width: 400px;
 		&__logo {
-			min-width: 200px;
-			font-family: 'Lobster', cursive;			
+			min-width: 200px;			
 			img {
 				height: 100px;
 				width: 105px;
 			}
-			&__title {
-				font-size: 2rem;
-				background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
-				background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
-				background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
-				background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
-				background: linear-gradient(to right, $skin-color, $light-blue-color);
-				-webkit-background-clip: text;
-				-moz-background-clip: text;
-				-o-background-clip: text;
-				-ms-background-clip: text;
-				background-clip: text;
-				-webkit-text-fill-color: transparent;
-				-moz-text-fill-color: transparent;
-				-o-text-fill-color: transparent;
-				-ms-text-fill-color: transparent;
-			}
-			&__subtitle {
-				font-size: 1.5rem;
-				background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
-				background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
-				background: -o-linear-gradient(to right, $skin-color, $light-blue-color);
-				background: -ms-linear-gradient(to right, $skin-color, $light-blue-color);
-				background: linear-gradient(to right, $skin-color, $light-blue-color);
-				-webkit-background-clip: text;
-				-moz-background-clip: text;
-				-o-background-clip: text;
-				-ms-background-clip: text;
-				background-clip: text;
-				-webkit-text-fill-color: transparent;
-				-moz-text-fill-color: transparent;
-				-o-text-fill-color: transparent;
-				-ms-text-fill-color: transparent;
-			}
 		}
-	}
-
-	/* navbar */
-	&__navbar-font-size {
-		font-size: 1.2rem;
 	}
 }
 
@@ -179,7 +119,6 @@ footer {
 ul.header__navbar__submenu {
 	li {
 		display: block;
-		font-size: 1.2rem;
 		font-weight: normal;
 	}
 	li:hover {
@@ -190,11 +129,9 @@ ul.header__navbar__submenu {
 
 /* estilo de menu, y menu seleccionado */
 .header__navbar__link {	
-	font-size: 1.2rem;	
 	color: $skin-color;
 	&--selected {
 		font-weight: bold;
-		font-size: 1.1em;
 		color: $light-blue-color;
 	}
 }
@@ -213,8 +150,7 @@ a.header__navbar__link:hover {
 		color: $light-blue-color;
 	}
 
-	&__title--boldWithBottomBorder{
-		font-weight: bold;	
+	&__title--boldWithBottomBorder{		
 		border-bottom-style: solid;
 		border-width: thin;
 		border-color: $skin-color;
@@ -224,8 +160,7 @@ a.header__navbar__link:hover {
 	&__newsletterText {
 		margin: 0;
 		width: 50%;
-		height: 25px;		
-		font-size: 0.8rem;
+		height: 25px;
 	}
 
 	/* newsletter: boton para la suscripcion */
@@ -235,8 +170,7 @@ a.header__navbar__link:hover {
 		margin-left: -3px;
 		width: 45%;	
 		height: 25px;
-		font-weight: bolder;		
-		font-size: 0.8rem;
+		font-weight: bolder;
 		padding:0px;
 	}
 }
@@ -248,4 +182,21 @@ a.header__navbar__link:hover {
 	-o-box-shadow: 0px 0px 10px 10px $brown-color inset;
 	-ms-box-shadow: 0px 0px 10px 10px $brown-color inset;
 	border-radius: 10px;
+}
+
+/* media queries */
+@media only screen and (max-width: 576px) {
+  .header {		
+		border-width: 5px;
+		min-height: 90px;
+
+		&__container {
+			&__logo {				
+				img {
+					height: 65px;
+					width: 70px;
+				}
+			}
+		}
+	}
 }

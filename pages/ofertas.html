@@ -14,14 +14,14 @@
 	<!-- header -->
 	<header class="container-fluid pt-2 header">
 		<ul class="row header__container">
-			<li class="col-7 d-flex header__container__logo">
+			<li class="col-7 d-flex header__container__logo text__logo">
 				<a href="../index.html"><img src="../images/logo-cozza.png" alt="Logo de Casa Cozza"></a>
 				<ul class="p-2 pt-0">					
-					<li class="h-25"><span class="header__container__logo__title">Casa Cozza</span></li>
-					<li class="h-75 pt-3"><span class="header__container__logo__subtitle">Polirubros</span></li>
+					<li class="h-25"><span class="text__logo__title">Casa Cozza</span></li>
+					<li class="h-75 pt-2"><span class="text__logo__subtitle">Polirubros</span></li>
 				</ul>	
 			</li>
-			<li class="col-5 align-self-center">
+			<li class="col-5 align-self-center text__medium">
 				<nav class="navbar navbar-expand-lg justify-content-end w-100 h-100 p-2 header__navbar-font-size">
 					<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
 						<span class="navbar-toggler-icon"></span>
@@ -56,19 +56,20 @@
 	</header>
 	<!-- main -->
 	<main>
-		<section class="container">
+		<h1 class="heading__extra-large">OFERTAS DEL MES</h1>
+		<section class="container-fluid p-0">
 			<!-- brebe resumen de la vigencia de las ofertas -->
-			<article>
-				<span class="badge w-100 mt-4 mb-3 ps-5">
-					<h1 class="text-start">Ofertas del mes</h1>
-				</span>
-				<p class="section__compromiso">
+			<span class="badge w-100">
+				<h2 class="heading__large text-start">AHORRO MES NOVIEMBRE</h2>
+			</span>
+			<article>				
+				<p class="section__compromiso text__medium p-3">
 					<U>Aprovechá los combos del mes y ahorrá.</U> La vigencia de estos increíbles precios es válida durante el corriente mes de <b>noviembre</b> sin actualización de precios ni alteración de productos.
 				</p>
 			</article>			
-			<ul class="row mt-5 p-0">
+			<ul class="row mt-4 ms-1 me-1 p-0">
 				<!-- oferta 1 -->
-				<li class="col col-12 col-md-5 p-3 mt-1 mb-5 card limpieza__card">
+				<li class="col col-12 col-md-6 p-3 mt-1 card limpieza__card">
 					<ul class="card-body">
 						<li>
 							<ul class="row p-0">
@@ -92,7 +93,7 @@
 					</ul>
 				</li>
 				<!-- oferta 2 -->
-				<li class="col col-12 col-md-5 offset-md-2 p-3 mt-1 mb-5 card bazar__card">
+				<li class="col col-12 col-md-6 p-3 mt-1 card bazar__card">
 					<ul class="card-body">
 						<li>
 							<ul class="row p-0">
@@ -114,7 +115,7 @@
 					</ul>
 				</li>
 				<!-- oferta 3 -->
-				<li class="col col-12 col-md-5 p-3 mt-4 mb-5 card perfumeria__card">
+				<li class="col col-12 col-md-6 p-3 mb-3 card perfumeria__card">
 					<ul class="card-body">
 						<li>
 							<ul class="row p-0">
@@ -135,7 +136,7 @@
 					</ul>
 				</li>
 				<!-- oferta 3 -->
-				<li class="col col-12 col-md-5 offset-md-2 p-3 mt-4 mb-5 card petshop__card">
+				<li class="col col-12 col-md-6 p-3 mb-3 card petshop__card">
 					<ul class="card-body">
 						<li>
 							<ul class="row p-0">
@@ -162,28 +163,28 @@
 	<footer class="footer">
 		<div class="container-fluid p-3">
 			<div class="row p-1">
-				<div class="col col-12 col-md-3">
-					<h6 class="footer__title--boldWithBottomBorder">Casa Cozza</h6>	
+				<div class="col col-12 col-md-3 text__extra-small">
+					<h6 class="footer__title--boldWithBottomBorder heading__small">Casa Cozza</h6>	
 					<span><i class="fas fa-envelope"></i> info@casacozza.com.ar</span>
 					<span class="d-block"><i class="fas fa-phone"></i> 0341-4202369</span>
 					<span class="d-block"><i class="fab fa-whatsapp"></i> +54 9 341664921</span>
 					<span><i class="fas fa-clock"></i> Lunes a Viernes de 9 a 18hs.</span>
 				</div>
-				<div class="col col-12 col-md-3">
-					<h6 class="footer__title--boldWithBottomBorder">Contenido</h6>
+				<div class="col col-12 col-md-3 text__extra-small">
+					<h6 class="footer__title--boldWithBottomBorder heading__small">Contenido</h6>
 					<span><a href="../index.html"><i class="fas fa-house-user"></i> Inicio</a></span>
 					<span class="d-block"><a href="nosotros.html"><i class="fas fa-user-tie"></i> Nosotros</a></span>
 					<span class="d-block"><a href="contacto.html"><i class="fas fa-align-justify"></i> Contacto</a></span>
 				</div>
-				<div class="col col-12 col-md-3">
-					<h6 class="footer__title--boldWithBottomBorder">Newsletter</h6>
+				<div class="col col-12 col-md-3 text__extra-small">
+					<h6 class="footer__title--boldWithBottomBorder heading__small">Newsletter</h6>
 					<form class="mt-4 d-flex needs-validation" novalidate>
 						<input class="form-control footer__newsletterText" type="email" required pattern="[a-zA-Z0-9!#$%&'*_+-]([\.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" maxlength="50" placeholder="Ingresá tu email" title="Ingresá un email válido, por favor.">
 						<input class="btn btn-primary footer__newsletterButton" type="submit" value="SUSCRIBITE">
 					</form>
 				</div>
-				<div class="col col-12 col-md-3">
-					<h6 class="footer__title--boldWithBottomBorder">Seguinos</h6>
+				<div class="col col-12 col-md-3 text__extra-small">
+					<h6 class="footer__title--boldWithBottomBorder heading__small">Seguinos</h6>
 					<a href="https://www.facebook.com/Casa-Cozza-100439702474971" target="_blank">
 						<span><i class="fab fa-facebook"></i> Facebook</span>
 					</a>
@@ -192,7 +193,7 @@
 					</a>
 				</div>				
 			</div>
-			<div class="row text-center p-1">
+			<div class="row text-center p-1 text__extra-small">
 				<span>© Casa Cozza 2021</span >
 			</div>	
 		</div>
@@ -221,7 +222,7 @@
 		  	})
 		  })()
 		</script>
-	<!--para desarrollo local si no tengo internet-->
-	<!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-</body>
-</html>
+		<!--para desarrollo local si no tengo internet-->
+		<!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+	</body>
+	</html>

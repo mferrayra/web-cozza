@@ -14,14 +14,14 @@
 	<!-- header -->
 	<header class="container-fluid pt-2 header">
 		<ul class="row header__container">			
-			<li class="col-7 d-flex header__container__logo">
+			<li class="col-7 col-md-5 d-flex header__container__logo text__logo">
 				<img src="images/logo-cozza.png" alt="Logo de Casa Cozza">
 				<ul class="p-2 pt-0">					
-					<li class="h-25"><span class="header__container__logo__title">Casa Cozza</span></li>	
-					<li class="h-25 pt-2"><span class="header__container__logo__subtitle">Polirubros</span></li>
+					<li class="h-25"><span class="text__logo__title">Casa Cozza</span></li>	
+					<li class="h-25 pt-2"><span class="text__logo__subtitle">Polirubros</span></li>
 				</ul>
 			</li>
-			<li class="col-5 align-self-center">
+			<li class="col-5 col-md-5 align-self-center text__medium">
 				<nav class="navbar navbar-expand-lg justify-content-end w-100 h-100 p-2 header__navbar-font-size">
 					<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
 						<span class="navbar-toggler-icon"></span>
@@ -56,6 +56,7 @@
 	</header>
 	<!-- main -->
 	<main>		
+		<h1 class="heading__extra-large">GRACIAS POR VISITARNOS</h1>
 		<section class="container-fluid p-0">			
 			<!-- carousel -->
 			<ul id="home-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -74,8 +75,8 @@
 					<ul class="carousel-item active">
 						<!-- desktop -->
 						<li class="carousel-caption d-none d-md-block">
-							<h5 class="mb-0">HOGAR</h5>
-				        	<p class="mb-0">Artículos de limpieza para cada necesidad</p>
+							<h5 class="mb-0 heading__medium">HOGAR</h5>
+				        	<p class="mb-0 text__small">Artículos de limpieza para cada necesidad</p>
 				      	</li>
 						<li>
 							<img src="images/carousel/slide-1-desktop.png" class="d-none d-md-block img-fluid" alt="Anuncio Limpieza para el Hogar">								
@@ -88,8 +89,8 @@
 					<ul class="carousel-item">
 						<!-- desktop -->
 						<li class="carousel-caption d-none d-md-block">
-				        	<h5 class="mb-0">OFICINA</h5>
-				        	<p class="mb-0">Artículos de limpieza para cada necesidad</p>
+				        	<h5 class="mb-0 heading__medium">OFICINA</h5>
+				        	<p class="mb-0 text__small">Artículos de limpieza para cada necesidad</p>
 				      	</li>
 						<li>
 							<img src="images/carousel/slide-2-desktop.png" class="d-none d-md-block img-fluid" alt="Anuncio Limpieza para oficinas">	
@@ -102,8 +103,8 @@
 					<ul class="carousel-item">
 						<!-- desktop -->
 						<li class="carousel-caption d-none d-md-block">
-				        	<h5 class="mb-0">HOTEL</h5>
-				        	<p class="mb-0">Artículos de limpieza para cada necesidad</p>
+				        	<h5 class="mb-0 heading__medium">HOTEL</h5>
+				        	<p class="mb-0 text__small">Artículos de limpieza para cada necesidad</p>
 				      	</li>
 						<li>
 							<img src="images/carousel/slide-3-dektop.png" class="d-none d-md-block img-fluid" alt="Anuncio Limpieza para hoteles">	
@@ -132,50 +133,58 @@
 		</section>
 		<section class="container-fluid p-0">
 			<span class="badge w-100">
-				<h1>NUESTROS ARTICULOS</h1>
+				<h2 class="heading__large">NUESTROS ARTICULOS</h2>
 			</span>
 			
-			<ul class="d-flex justify-content-between flex-wrap mt-4 ms-1 me-1">
-				<li class="p-4 ms-5 me-5">
-					<a href="pages/productos.html#limpieza">
-						<img class="rounded-pill shadow-background-image" src="images/limpieza.png" alt="Símbolo artículos de limpieza.">
-						<h2 class="mt-3"><span class="badge w-100">Limpieza</span></h2>
+			<ul class="d-flex justify-content-between flex-wrap mt-4 ms-1 me-1 container-mobile">
+				<li class="p-1 p-md-4 ms-5 me-5">
+					<a class="d-flex flex-column justify-content-center" href="pages/productos.html#limpieza">
+						<img class="rounded-pill shadow-background-image container-mobile__img" src="images/limpieza.png" alt="Símbolo artículos de limpieza.">
+						<span class="badge mt-3">
+							<h5 class="heading__medium">LIMPIEZA</h5>
+						</span>
 					</a>
 				</li>				
-				<li class="p-4 ms-5 me-5">
-					<a href="pages/productos.html#perfumeria">
-						<img class="rounded-pill shadow-background-image" src="images/perfumeria.png" alt="Símbolo artículos de perfumería.">
-						<h2 class="mt-3"><span class="badge w-100">Perfumería</span></h2>
+				<li class="p-1 p-md-4 ms-5 me-5">
+					<a class="d-flex flex-column justify-content-center" href="pages/productos.html#perfumeria">
+						<img class="rounded-pill shadow-background-image container-mobile__img" src="images/perfumeria.png" alt="Símbolo artículos de perfumería.">
+						<span class="badge mt-3">
+							<h5 class="heading__medium">PERFUMERIA</h5>
+						</span>
 					</a>
 				</li>
-				<li class="p-4 ms-5 me-5">
-					<a href="pages/productos.html#petshop">
-						<img class="rounded-pill shadow-background-image" src="images/mascotas.png" alt="Símbolo artículos de petshop.">
-						<h2 class="mt-3"><span class="badge w-100">Macotas</span></h2>
+				<li class="p-1 p-md-4 ms-5 me-5">
+					<a class="d-flex flex-column justify-content-center" href="pages/productos.html#petshop">
+						<img class="rounded-pill shadow-background-image container-mobile__img" src="images/mascotas.png" alt="Símbolo artículos de petshop.">
+						<span class="badge mt-3">
+							<h5 class="heading__medium">MASCOTAS</h5>
+						</span>
 					</a>
 				</li>
-				<li class="p-4 ms-5 me-5">
-					<a href="pages/productos.html#varios">
-						<img class="rounded-pill shadow-background-image" src="images/otros.png" alt="Símbolo otros artículos.">
-						<h2 class="mt-3"><span class="badge w-100">Otros</span></h2>
+				<li class="p-1 p-md-4 ms-5 me-5">
+					<a class="d-flex flex-column justify-content-center" href="pages/productos.html#varios">
+						<img class="rounded-pill shadow-background-image container-mobile__img" src="images/otros.png" alt="Símbolo otros artículos.">
+						<span class="badge mt-3">
+							<h5 class="heading__medium">OTROS</h5>
+						</span>
 					</a>
 				</li>				
 			</ul>
 		</section>
 		<section class="container-fluid p-0">
-			<span class="badge w-100 m-0"><h2>CONSULTAS FRECUENTES</h2></span>			
+			<span class="badge w-100 m-0"><h2 class="heading__large">CONSULTAS FRECUENTES</h2></span>			
 			<ul class="row m-0 mt-4">
 				<li class="col col-12">
 					<ul class="accordion p-4" id="faq">
 						<li class="accordion-item">
 							<h2 class="accordion-header" id="headingOne">
-								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+								<button class="accordion-button text__medium" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
 									¿Que medios de pagos trabajan?
 								</button>
 							</h2>
 							<ul id="q1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faq">
 								<li class="accordion-body">
-									<article>
+									<article class="text__medium">
 										<p>
 											<strong>Nuestros medios de cobro:</strong>
 										</p>
@@ -194,13 +203,13 @@
 						</li>
 						<li class="accordion-item">
 							<h2 class="accordion-header" id="headingTwo">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+								<button class="accordion-button collapsed text__medium" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
 									¿Puedo pagar con billetera Santa Fé?
 								</button>
 							</h2>
 							<ul id="q2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 								<li class="accordion-body">
-									<article>
+									<article class="text__medium">
 										<p>
 											<strong>Desde luego que sí!</strong> 
 										</p>
@@ -213,13 +222,13 @@
 						</li>
 						<li class="accordion-item">
 							<h2 class="accordion-header" id="headingThree">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+								<button class="accordion-button collapsed text__medium" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
 									¿Hacen envíos a domicilio?
 								</button>
 							</h2>
 							<ul id="q3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 								<li class="accordion-body">
-									<article>
+									<article class="text__medium">
 										<p>
 											<strong>Sí, te enviamos tu pedido!</strong>
 										</p>
@@ -240,9 +249,9 @@
 							</ul>
 						</li>
 						<li class="accordion-item">
-							<article>
+							<article class="text__medium">
 								<h2 class="accordion-header" id="headingThree">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+									<button class="accordion-button collapsed text__medium" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
 										¿Si soy un consorcio puedo abrir una cuenta corriente?
 									</button>
 								</h2>
@@ -271,28 +280,28 @@
 	<footer>
 		<div class="container-fluid p-3">
 			<div class="row p-1">
-				<div class="col col-12 col-md-3">
-					<h6 class="footer__title--boldWithBottomBorder">Casa Cozza</h6>	
+				<div class="col col-12 col-md-3 text__extra-small">
+					<h6 class="footer__title--boldWithBottomBorder heading__small">Casa Cozza</h6>	
 					<span><i class="fas fa-envelope"></i> info@casacozza.com.ar</span>
 					<span class="d-block"><i class="fas fa-phone"></i> 0341-4202369</span>
 					<span class="d-block"><i class="fab fa-whatsapp"></i> +54 9 341664921</span>
 					<span><i class="fas fa-clock"></i> Lunes a Viernes de 9 a 18hs.</span>
 				</div>
-				<div class="col col-12 col-md-3">
-					<h6 class="footer__title--boldWithBottomBorder">Contenido</h6>
+				<div class="col col-12 col-md-3 text__extra-small">
+					<h6 class="footer__title--boldWithBottomBorder heading__small">Contenido</h6>
 					<span class="footer__link--selected"><i class="fas fa-house-user"></i> Inicio</span>
 					<span class="d-block"><a href="pages/nosotros.html"><i class="fas fa-user-tie"></i> Nosotros</a></span>
 					<span class="d-block"><a href="pages/contacto.html"><i class="fas fa-align-justify"></i> Contacto</a></span>
 				</div>
-				<div class="col col-12 col-md-3">
-					<h6 class="footer__title--boldWithBottomBorder">Newsletter</h6>
+				<div class="col col-12 col-md-3 text__extra-small">
+					<h6 class="footer__title--boldWithBottomBorder heading__small">Newsletter</h6>
 					<form class="mt-4 d-flex needs-validation" novalidate>
 						<input class="form-control footer__newsletterText" type="email" required pattern="[a-zA-Z0-9!#$%&'*_+-]([\.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" maxlength="50" placeholder="Ingresá tu email" title="Ingresá un email válido, por favor.">
 						<input class="btn btn-primary footer__newsletterButton" type="submit" value="SUSCRIBITE">
 					</form>					
 				</div>
-				<div class="col col-12 col-md-3">
-					<h6 class="footer__title--boldWithBottomBorder">Seguinos</h6>
+				<div class="col col-12 col-md-3 text__extra-small">
+					<h6 class="footer__title--boldWithBottomBorder heading__small">Seguinos</h6>
 					<a href="https://www.facebook.com/Casa-Cozza-100439702474971" target="_blank">
 						<span><i class="fab fa-facebook"></i> Facebook</span>
 					</a>
@@ -301,7 +310,7 @@
 					</a>
 				</div>				
 			</div>
-			<div class="row text-center p-1">
+			<div class="row text-center p-1 text__extra-small">
 				<span>© Casa Cozza 2021</span >
 			</div>	
 		</div>

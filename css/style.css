@@ -3,15 +3,115 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
 /*para desarrollo local si no tengo internet*/
 /*@import "node_modules/bootstrap/dist/css/bootstrap.min.css";*/
-/* estilo común para todas las páginas */
+/* paleta de colores del sitio */
+/*$brown-color: orange;*/
+/*por el stoke del url (backgroung-image => toogle button)*/
 /* fuentes que utilizo en el proyecto */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
-/* paleta de colores del sitio */
-/*$brown-color: orange;*/
-/*por el stoke del url (backgroung-image => toogle button)*/
+.heading__extra-large {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.8rem;
+  text-shadow: 1px 1px 2px #ffdead, 0 0 1em #00c4f0, 0 0 0.2em #993300;
+  background-color: #ffdead;
+  margin: 0px;
+  padding: 20px;
+  text-align: center; }
+
+.heading__large {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1rem; }
+
+.heading__medium {
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+.heading__small {
+  font-size: 1rem;
+  font-weight: 700; }
+
+.text__medium {
+  font-size: 1.5rem; }
+
+.text__small {
+  font-size: 1rem; }
+
+.text__extra-small {
+  font-size: 0.9rem; }
+
+.text__logo {
+  font-family: 'Lobster', cursive; }
+  .text__logo__title {
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(to right, #ffdead, #00c4f0);
+    background: -moz-linear-gradient(to right, #ffdead, #00c4f0);
+    background: -o-linear-gradient(to right, #ffdead, #00c4f0);
+    background: -ms-linear-gradient(to right, #ffdead, #00c4f0);
+    background: linear-gradient(to right, #ffdead, #00c4f0);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -ms-text-fill-color: transparent; }
+  .text__logo__subtitle {
+    font-size: 2rem;
+    background: -webkit-linear-gradient(to right, #ffdead, #00c4f0);
+    background: -moz-linear-gradient(to right, #ffdead, #00c4f0);
+    background: -o-linear-gradient(to right, #ffdead, #00c4f0);
+    background: -ms-linear-gradient(to right, #ffdead, #00c4f0);
+    background: linear-gradient(to right, #ffdead, #00c4f0);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -ms-text-fill-color: transparent; }
+
+/* media queries */
+@media only screen and (max-width: 576px) {
+  .heading__extra-large {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    text-shadow: 1px 1px 2px #ffdead, 0 0 1em #00c4f0, 0 0 0.2em #993300;
+    background-color: #ffdead;
+    margin: 0px;
+    padding: 20px;
+    text-align: center; }
+  .heading__large {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.35rem; }
+  .heading__medium {
+    font-size: 0.9rem;
+    font-weight: 700; }
+  .heading__small {
+    font-size: 0.7rem;
+    font-weight: 700; }
+  .text__medium {
+    font-size: 1.1rem; }
+  .text__small {
+    font-size: 0.9rem; }
+  .text__extra-small {
+    font-size: 0.8rem; }
+  .text__logo {
+    font-family: 'Lobster', cursive; }
+    .text__logo__title {
+      font-size: 1.6rem; }
+    .text__logo__subtitle {
+      font-size: 1.2rem; } }
+
 /* personalizo la clase btn-primary y btn-default de bootstrap para que el color sea coherente con mi paleta */
 .accordion-button {
   background-color: #ffdead; }
@@ -77,6 +177,7 @@
     background-color: #ffdead;
     border-color: #ffcf87; }
 
+/* estilo común para todas las páginas */
 /* reset margin-padding  */
 * {
   margin: 0;
@@ -89,18 +190,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   min-height: 100%;
   color: #000000; }
-
-/* encabezado principal */
-h1 {
-  font-size: 2.5em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700; }
-
-/* encabezado secundario */
-h2 {
-  font-size: 2em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700; }
 
 /* links */
 a {
@@ -159,50 +248,14 @@ footer {
   border-width: 10px;
   background-color: #993300;
   color: #ffdead;
-  min-height: 130px;
-  /* navbar */ }
+  min-height: 130px; }
   .header__container {
     min-width: 400px; }
     .header__container__logo {
-      min-width: 200px;
-      font-family: 'Lobster', cursive; }
+      min-width: 200px; }
       .header__container__logo img {
         height: 100px;
         width: 105px; }
-      .header__container__logo__title {
-        font-size: 2rem;
-        background: -webkit-linear-gradient(to right, #ffdead, #00c4f0);
-        background: -moz-linear-gradient(to right, #ffdead, #00c4f0);
-        background: -o-linear-gradient(to right, #ffdead, #00c4f0);
-        background: -ms-linear-gradient(to right, #ffdead, #00c4f0);
-        background: linear-gradient(to right, #ffdead, #00c4f0);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -o-background-clip: text;
-        -ms-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-        -o-text-fill-color: transparent;
-        -ms-text-fill-color: transparent; }
-      .header__container__logo__subtitle {
-        font-size: 1.5rem;
-        background: -webkit-linear-gradient(to right, #ffdead, #00c4f0);
-        background: -moz-linear-gradient(to right, #ffdead, #00c4f0);
-        background: -o-linear-gradient(to right, #ffdead, #00c4f0);
-        background: -ms-linear-gradient(to right, #ffdead, #00c4f0);
-        background: linear-gradient(to right, #ffdead, #00c4f0);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -o-background-clip: text;
-        -ms-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-        -o-text-fill-color: transparent;
-        -ms-text-fill-color: transparent; }
-  .header__navbar-font-size {
-    font-size: 1.2rem; }
 
 /* menu hamburguesa */
 .navbar-toggler-icon {
@@ -220,18 +273,15 @@ ul.header__navbar__submenu {
   z-index: 1; }
   ul.header__navbar__submenu li {
     display: block;
-    font-size: 1.2rem;
     font-weight: normal; }
   ul.header__navbar__submenu li:hover {
     font-weight: bold; }
 
 /* estilo de menu, y menu seleccionado */
 .header__navbar__link {
-  font-size: 1.2rem;
   color: #ffdead; }
   .header__navbar__link--selected {
     font-weight: bold;
-    font-size: 1.1em;
     color: #00c4f0; }
 
 a.header__navbar__link:hover {
@@ -248,15 +298,13 @@ a.header__navbar__link:hover {
     font-size: 1.1em;
     color: #00c4f0; }
   .footer__title--boldWithBottomBorder {
-    font-weight: bold;
     border-bottom-style: solid;
     border-width: thin;
     border-color: #ffdead; }
   .footer__newsletterText {
     margin: 0;
     width: 50%;
-    height: 25px;
-    font-size: 0.8rem; }
+    height: 25px; }
   .footer__newsletterButton {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -264,7 +312,6 @@ a.header__navbar__link:hover {
     width: 45%;
     height: 25px;
     font-weight: bolder;
-    font-size: 0.8rem;
     padding: 0px; }
 
 .card {
@@ -274,6 +321,15 @@ a.header__navbar__link:hover {
   -o-box-shadow: 0px 0px 10px 10px #993300 inset;
   -ms-box-shadow: 0px 0px 10px 10px #993300 inset;
   border-radius: 10px; }
+
+/* media queries */
+@media only screen and (max-width: 576px) {
+  .header {
+    border-width: 5px;
+    min-height: 90px; }
+    .header__container__logo img {
+      height: 65px;
+      width: 70px; } }
 
 /* aca iria todo el scss para la pagina de contacto */
 /* ofertas */
@@ -322,6 +378,11 @@ span.badge {
   -o-box-shadow: 0px 0px 10px 10px #ffdead;
   -ms-box-shadow: 0px 0px 10px 10px #ffdead; }
 
+/* media queries */
+@media only screen and (max-width: 576px) {
+  .shadow-background-image-title--small {
+    height: 40px; } }
+
 /* nosotros */
 .section__compromiso {
   font-size: 1.6rem;
@@ -365,6 +426,7 @@ span.carousel-control-next-icon:hover {
 
 .shadow-background-image {
   height: 150px;
+  width: 150px;
   background-color: #ffdead;
   box-shadow: 0px 0px 10px 10px #993300;
   -webkit-box-shadow: 0px 0px 10px 10px #993300;
@@ -388,3 +450,9 @@ ul.accordion {
   margin-bottom: 20px; }
   ul.accordion li {
     margin-bottom: 5px; }
+
+/* media queries */
+@media only screen and (max-width: 576px) {
+  .container-mobile__img {
+    height: 100px;
+    width: 100px; } }
