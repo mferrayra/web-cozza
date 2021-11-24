@@ -67,6 +67,9 @@
 			-ms-text-fill-color: transparent;
 		}
 		&__subtitle {
+			display: block;
+			position: relative;
+			top: -15px;
 			font-size: 2rem;
 			background: -webkit-linear-gradient(to right, $skin-color, $light-blue-color);
 			background: -moz-linear-gradient(to right, $skin-color, $light-blue-color);
