@@ -44,22 +44,12 @@ span.carousel-control-next-icon:hover {
 }
 
 .shadow-background-image {
-	height: 150px;
-	width: 150px;
     background-color: $skin-color;
     box-shadow: 0px 0px 10px 10px $brown-color;
     -webkit-box-shadow: 0px 0px 10px 10px $brown-color;
 	-moz-box-shadow: 0px 0px 10px 10px $brown-color;
 	-o-box-shadow: 0px 0px 10px 10px $brown-color;
 	-ms-box-shadow: 0px 0px 10px 10px $brown-color;
-
-	&--small {
-		height: 120px;
-	}
-}
-
-.shadow-background-image:hover {
-	opacity: 0.5;
 }
 
 ul.accordion {
@@ -77,42 +67,32 @@ ul.accordion {
 	}
 }
 
+.icon {
+	&__color {
+		color: $brown-color;
+	}
+
+	&__color:hover {
+		opacity: 0.5;
+	}
+
+	&__image--size {
+		height: 150px;
+		width: 150px;
+	}
+
+	&__image--small-size {
+		height: 120px;
+		width: 120px;
+	}		
+}
+
 /* media queries */
-@media only screen and (max-width: 990px) {
-	.container-mobile {
-		&__img {
-			height: 80px;
-			width: 80px;
-		}
-
-		&__label-hidden {
-			display: none;
-		}
-	}
-}
-
 @media only screen and (max-width: 576px) {
-	.container-mobile {
-		&__img {
-			height: 80px;
-			width: 80px;
-		}
-
-		&__label-hidden {
-			display: none;
+	.icon {
+		&__image--size {
+			height: 90px;
+			width: 90px;
 		}
 	}
-}
-
-@media only screen and (max-width: 420px) {
-	.container-mobile {
-		&__img {
-			height: 40px;
-			width: 40px;
-		}
-
-		&__label-hidden {
-			display: none;
-		}
-	}	
 }
