@@ -457,5 +457,5 @@ ul.accordion {
 /* media queries */
 @media only screen and (max-width: 576px) {
   .container-mobile__img {
-    height: 100px;
-    width: 100px; } }
+    height: 90px;
+    width: 90px; } }
