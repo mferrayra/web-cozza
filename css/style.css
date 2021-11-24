@@ -474,7 +474,7 @@ ul.accordion {
 
 @media only screen and (max-width: 576px) {
   .container-mobile__img {
-    height: 60px;
-    width: 60px; }
+    height: 80px;
+    width: 80px; }
   .container-mobile__label-hidden {
     display: none; } }
