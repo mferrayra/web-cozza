@@ -38,6 +38,33 @@
 }
 
 /* media queries */
+@media only screen and (max-width: 1100px) {
+	.product {
+		&__price {
+			width: 100px;
+			transform: translate(33px, 60px);
+		}
+
+		&__detail {
+			transform: translate(0px, -50px);
+			font-weight: 700;	
+		}
+	}
+	
+	.shadow-background-image {
+		height: 250px; 
+		&-title--small {
+			height: 40px;
+		}
+	}
+
+	.text {
+		&__extra-small__1100 {
+			font-size: 0.7rem;	
+		}
+	}
+}
+
 @media only screen and (max-width: 576px) {
 	.product {
 		&__price {

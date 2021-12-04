@@ -99,6 +99,27 @@ footer {
 			}
 		}
 	}
+
+	&__navbar__submenu {
+		position: absolute;
+		display: none;
+	}
+
+	&__navbar__link {	
+		color: $skin-color;
+		&--selected {
+			font-weight: bold;
+			color: $light-blue-color;
+		}
+	}
+
+	&__navbar__link__product {	
+		color: $skin-color;
+		&--selected {
+			font-weight: bold;
+			color: $light-blue-color;
+		}
+	}
 }
 
 /* menu hamburguesa */
@@ -109,12 +130,6 @@ footer {
 .navbar-toggler {
 	border-color: $skin-color;
 } 
-
-/* sumbenu */
-.header__navbar__submenu {
-	position: absolute;
-	display: none;
-}
 
 ul.header__navbar__submenu {
 	li {
@@ -127,18 +142,13 @@ ul.header__navbar__submenu {
 	z-index: 1;
 }
 
-/* estilo de menu, y menu seleccionado */
-.header__navbar__link {	
-	color: $skin-color;
-	&--selected {
-		font-weight: bold;
-		color: $light-blue-color;
-	}
-}
-
 a.header__navbar__link:hover {
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
+	color: $skin-color;
+}
+
+a.header__navbar__link__product:hover {
 	color: $skin-color;
 }
 
