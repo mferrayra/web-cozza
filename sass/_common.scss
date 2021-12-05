@@ -22,6 +22,10 @@ a {
 	color: $skin-color;
 }
 
+a:hover {
+	color: $skin-color;
+}
+
 /* listas desordenadas */
 ul {
 	list-style: none;
@@ -54,7 +58,6 @@ footer {
 	a:hover {
 		border-bottom-style: solid;
 		border-bottom-width: thin;
-		color: $skin-color;
 	}
 }
 
@@ -145,11 +148,6 @@ ul.header__navbar__submenu {
 a.header__navbar__link:hover {
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
-	color: $skin-color;
-}
-
-a.header__navbar__link__product:hover {
-	color: $skin-color;
 }
 
 /* clases footer */

@@ -211,6 +211,9 @@ a {
   font-family: 'Roboto', sans-serif;
   color: #ffdead; }
 
+a:hover {
+  color: #ffdead; }
+
 /* listas desordenadas */
 ul {
   list-style: none;
@@ -237,8 +240,7 @@ footer {
   line-height: 1.4rem; }
   footer a:hover {
     border-bottom-style: solid;
-    border-bottom-width: thin;
-    color: #ffdead; }
+    border-bottom-width: thin; }
 
 /* submenu */
 #menu-with-submenu:hover ul {
@@ -301,11 +303,7 @@ ul.header__navbar__submenu {
 
 a.header__navbar__link:hover {
   border-bottom-style: solid;
-  border-bottom-width: 3px;
-  color: #ffdead; }
-
-a.header__navbar__link__product:hover {
-  color: #ffdead; }
+  border-bottom-width: 3px; }
 
 /* clases footer */
 .footer {
@@ -518,3 +516,14 @@ ul.accordion {
   .icon__image--size {
     height: 90px;
     width: 90px; } }
+
+.heading-404__extra-large {
+  font-size: 10rem;
+  font-weight: 900; }
+
+.heading-404__large {
+  font-size: 4rem;
+  font-weight: 900; }
+
+.heading-404__img {
+  height: 300px; }

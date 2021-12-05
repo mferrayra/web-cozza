@@ -72,38 +72,38 @@
 				<div class="row mt-4 ms-1 me-1">	
 					<!-- formulario de contacto -->				
 					<form class="col col-12 col-md-5 card needs-validation" novalidate>
-						<div class="card-body">
+						<ul class="card-body">
 							<h3><i class="fas fa-envelope"></i> Escribinos</h3>
 							<p>Te responderemos a la brevedad.</p>
-							<div class="mb-3">
+							<li class="mb-3">
 								<i class="fas fa-user"></i>
 								<label for="form-name">Tu nombre</label>
 								<input type="text" class="form-control" maxlength="50" required autofocus>
 								<span class="invalid-feedback">* ingresá tu nombre</span>
-							</div>
-							<div class="mb-3">
+							</li>
+							<li class="mb-3">
 								<i class="fas fa-envelope"></i>
 								<label for="form-email">Tu email</label>
 								<input type="email" class="form-control" maxlength="50" required pattern="[a-zA-Z0-9!#$%&'*_+-]([\.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?">
 								<span class="invalid-feedback">* ingresá tu email correctamente</span>
-							</div>
-							<div class="mb-3">
+							</li>
+							<li class="mb-3">
 								<i class="fas fa-tag"></i>
 								<label for="form-Subject">Asunto</label>
 								<input type="text" class="form-control" maxlength="20" required>
 								<span class="invalid-feedback">* ingresá porque el asunto</span>
-							</div>
-							<div class="mb-3">
+							</li>
+							<li class="mb-3">
 								<i class="fas fa-pencil-alt"></i>
 								<label for="form-text">Consulta o sugerencias</label>
 								<textarea class="form-control md-textarea" rows="3" maxlength="60" required></textarea>
 								<span class="invalid-feedback">* ingresá la consulta o sugerencia/s</span>
-							</div>
-							<div class="row mt-4 mb-4 p-2">
+							</li>
+							<li class="row mt-4 mb-4 p-2">
 								<input type="submit" class="col col-5 btn btn-primary" name="btn-send" value="Enviar">
 								<input type="reset" id="btn-cancel" class="col col-5 offset-2 btn btn-default" name="btn-cancel" value="Cancelar">
-							</div>
-						</div>
+							</li>
+						</ul>
 					</form>
 					<!-- google maps ubicación -->
 					<div class="col col-12 col-md-7 card pl-3 pr-3 pb-3">
@@ -117,43 +117,39 @@
 		</div>		
 	</main>
 	<!-- footer -->
-	<footer class="footer">
-		<div class="container-fluid p-3">
-			<div class="row p-1">
-				<div class="col col-12 col-md-3 text__extra-small">
-					<h6 class="footer__title--boldWithBottomBorder heading__small">Casa Cozza</h6>	
-					<span><i class="fas fa-envelope"></i> info@casacozza.com.ar</span>
-					<span class="d-block"><i class="fas fa-phone"></i> 0341-4202369</span>
-					<span class="d-block"><i class="fab fa-whatsapp"></i> +54 9 341664921</span>
-					<span><i class="fas fa-clock"></i> Lunes a Viernes de 9 a 18hs.</span>
-				</div>
-				<div class="col col-12 col-md-3 text__extra-small">
-					<h6 class="footer__title--boldWithBottomBorder heading__small">Contenido</h6>
-					<span><a href="../index.html"><i class="fas fa-house-user"></i> Inicio</a></span>
-					<span class="d-block"><a href="nosotros.html"><i class="fas fa-user-tie"></i> Nosotros</a></span>
-					<span class="d-block footer__link--selected"><i class="fas fa-align-justify"></i> Contacto</span>
-				</div>
-				<div class="col col-12 col-md-3 text__extra-small">
-					<h6 class="footer__title--boldWithBottomBorder heading__small">Newsletter</h6>
-					<form class="mt-4 mb-4 mb-md-0 d-flex needs-validation" novalidate>
-						<input class="form-control footer__newsletterText" type="email" required pattern="[a-zA-Z0-9!#$%&'*_+-]([\.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" maxlength="50" placeholder="Ingresá tu email" title="Ingresá un email válido, por favor.">
-						<input class="btn btn-primary footer__newsletterButton" type="submit" value="SUSCRIBITE">
-					</form>
-				</div>
-				<div class="col col-12 col-md-3 text__extra-small">
-					<h6 class="footer__title--boldWithBottomBorder heading__small">Seguinos</h6>
-					<a href="https://www.facebook.com/Casa-Cozza-100439702474971" target="_blank">
-						<span><i class="fab fa-facebook"></i> Facebook</span>
-					</a>
-					<a href="https://www.instagram.com/cozzacasa" target="_blank">
-						<span class="d-block"><i class="fab fa-instagram"></i> Instagram</span>		
-					</a>
-				</div>				
-			</div>
-			<div class="row text-center p-1 text__extra-small">
-				<span>© Casa Cozza 2021</span >
-			</div>	
-		</div>
+	<footer class="container-fluid p-3 footer">
+		<ul class="row p-1">
+			<li class="col col-12 col-md-3 text__extra-small">
+				<h6 class="footer__title--boldWithBottomBorder heading__small">Casa Cozza</h6>	
+				<span><i class="fas fa-envelope"></i> info@casacozza.com.ar</span>
+				<span class="d-block"><i class="fas fa-phone"></i> 0341-4202369</span>
+				<span class="d-block"><i class="fab fa-whatsapp"></i> +54 9 341664921</span>
+				<span><i class="fas fa-clock"></i> Lunes a Viernes de 9 a 18hs.</span>
+			</li>
+			<li class="col col-12 col-md-3 text__extra-small">
+				<h6 class="footer__title--boldWithBottomBorder heading__small">Contenido</h6>
+				<span><a href="../index.html"><i class="fas fa-house-user"></i> Inicio</a></span>
+				<span class="d-block"><a href="nosotros.html"><i class="fas fa-user-tie"></i> Nosotros</a></span>
+				<span class="d-block footer__link--selected"><i class="fas fa-align-justify"></i> Contacto</span>
+			</li>
+			<li class="col col-12 col-md-3 text__extra-small">
+				<h6 class="footer__title--boldWithBottomBorder heading__small">Newsletter</h6>
+				<form class="mt-4 mb-4 mb-md-0 d-flex needs-validation" novalidate>
+					<input class="form-control footer__newsletterText" type="email" required pattern="[a-zA-Z0-9!#$%&'*_+-]([\.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" maxlength="50" placeholder="Ingresá tu email" title="Ingresá un email válido, por favor.">
+					<input class="btn btn-primary footer__newsletterButton" type="submit" value="SUSCRIBITE">
+				</form>
+			</li>
+			<li class="col col-12 col-md-3 text__extra-small">
+				<h6 class="footer__title--boldWithBottomBorder heading__small">Seguinos</h6>
+				<a href="https://www.facebook.com/Casa-Cozza-100439702474971" target="_blank">
+					<span><i class="fab fa-facebook"></i> Facebook</span>
+				</a>
+				<a href="https://www.instagram.com/cozzacasa" target="_blank">
+					<span class="d-block"><i class="fab fa-instagram"></i> Instagram</span>		
+				</a>
+			</li>				
+		</ul>
+		<span class="d-flex justify-content-center text__extra-small">© Casa Cozza 2021</span>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script>
@@ -161,7 +157,7 @@
 			'use strict';
 			
 			// Fetch all the forms we want to apply custom Bootstrap validation styles to
-		  	var forms = document.querySelectorAll('.needs-validation')
+			var forms = document.querySelectorAll('.needs-validation')
 
 			document.getElementById("btn-cancel").addEventListener("click", function() {
 				for (var i = 0; i < forms.length; i++) {
@@ -171,7 +167,7 @@
 
 		  	// Loop over them and prevent submission
 		  	Array.prototype.slice.call(forms)
-		  		.forEach(function (form) {
+		  	.forEach(function (form) {
 		  		form.addEventListener('submit', function (event) {		  			
 		  			if (!form.checkValidity()) {
 		  				event.preventDefault()
@@ -180,12 +176,12 @@
 		  			} else {
 		  				form.classList.remove('was-validated')
 		  			}
-		  		
-		  	}, false)
-		  })
-		})()
-	</script>
-	<!--para desarrollo local si no tengo internet-->
-	<!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-</body>
-</html>
+
+		  		}, false)
+		  	})
+		  })()
+		</script>
+		<!--para desarrollo local si no tengo internet-->
+		<!-- <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+	</body>
+	</html>
